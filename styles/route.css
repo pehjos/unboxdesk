@@ -1,0 +1,17 @@
+.listroute{
+    display: flex;
+    align-items: center;
+    width: 97%;
+    position: absolute;
+    top: 430px;
+    overflow-x: scroll;
+    margin: 10px;
+    background-color:orange;
+}
+.list{
+margin: 4px;
+display: flex;
+font-size: 18px;
+color: white;
+text-transform: capitalize;
+}

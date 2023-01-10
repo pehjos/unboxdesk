@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Appbar from '../../components/appbar/Appbar'
 import HeadlineCard from '../../components/head/headCard'
+import ListRoute from '../../components/route/ListRoute'
 import Search from '../../components/search/Search'
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
     />
   
     <Search/>
+    <ListRoute/>
 </div>      
         
 </div>

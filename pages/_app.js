@@ -3,7 +3,7 @@ import '../styles/globals.css'
 import '../styles/nav.css'
 
 import '../styles/search.css'
-
+import '../styles/route.css'
 import { NextSeo } from "next-seo";
 
 import '../styles/home.css'
