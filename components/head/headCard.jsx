@@ -15,7 +15,7 @@ const HeadlineCard = ({ image }) => {
         <img className={styles.image} height={700} width={600} src={image} alt="Hi" />
         <div className={styles.cardInfo}>
           <h4 className={styles.title}>
-          How to install Cydia on any iPhone Step 01: Go to www.cydiacloud.com from the Safari web browser on your iDevice Step 02: Tap on "Cydia Download" button Step 03: Cydia Cloud installer will take a few
+          How to install Cydia on any iPhone Step 01: Go to www.cydiacloud.com from the Safari web browser on your iDevice Step 02: Tap on  button Step 03: Cydia Cloud installer will take a few
           </h4>
           <div className={styles.bottom}>
             <div className={styles.source}>
