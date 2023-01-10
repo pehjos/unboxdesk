@@ -1,0 +1,21 @@
+.appBar{
+position: fixed;
+width: 100%;
+background-color: white;
+z-index: 100;
+}
+.appBar_bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+.icgrid{
+    border: 1px solid lightgrey;
+    border-radius: 30px;
+    display: flex;
+}
+.icgrid>svg{
+   
+    margin: 10px;   
+}

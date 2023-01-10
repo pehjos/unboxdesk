@@ -1,0 +1,147 @@
+.main_footer{
+    background-color: rgba(20, 19, 19, 0.808);
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 20px;
+    }
+    
+    .email{
+    color: blue;
+    }
+    
+    .contact1{
+    color: blue;
+    }
+    
+    .footer1{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    .footer1>p{
+        color: #fff;
+    }
+    
+    .footer1>h5{
+        color: tomato;
+        text-shadow: 1px 1px #2196f3; 
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 600;
+    }
+    
+    .contact1{
+        font-size: 20px;
+    }
+    
+    .footer{
+    border-bottom: 1px solid lightgrey;
+    }
+    
+    .para{
+    text-decoration: underline;
+    }
+    
+    .iconn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    color: tomato;
+    
+    }
+    .iconn>.MuiSvgIcon-root{
+    background-color: white;
+    margin: 10px;
+    padding: 5px;
+    font-size: 30px;
+    border-radius: 50%;
+    }
+    .end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: colum🚀🚀🚀🚀❤❤❤
+    }
+    
+    .cert{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 10px;
+    }
+    .end>p{
+     color: whitesmoke;
+     margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+        }
+    
+    
+    
+    @media (max-width: 700px){
+        .cert{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: 10px;
+        }
+        .main_footer{
+            background-color: rgba(20, 19, 19, 0.808);
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-top: 20px;
+            }
+            
+            .email{
+            color: blue;
+            }
+            
+            .contact1{
+            color: blue;
+            }
+            
+            .footer1{
+                flex-direction: column;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+            }
+            
+            .footer1>h4{
+                font-size: 20px;
+            }
+            
+            .contact1{
+                font-size: 20px;
+            }
+            
+            .footer{
+            border-bottom: 1px solid lightgray;
+            }
+            
+            .para{
+            text-decoration: underline;
+            }
+            
+            .iconn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+            color: tomato;
+            }
+            
+            .end{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            }
+    }

@@ -1,0 +1,96 @@
+.news__content_category_right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    }
+    .news__content__category{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    
+    }
+    .news__content_category_right>.MuiSvgIcon-root{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    color: tomato;
+    }
+    .news__content_category_right>p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    margin: 5px;
+    color: teal;
+    }
+    .news__content_category_left{
+    background-color: white;
+    
+    }
+    .news__content_category_left>h5{
+        font-weight: 500;
+        overflow:hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        text-overflow:ellipsis;
+        -webkit-box-orient: vertical;
+        white-space: wrap;
+        color: red;
+        text-align: left;
+        
+        font-size: 16px;
+        overflow-wrap: anywhere;
+        margin-top: -4px;
+            }
+    .news__content_readings>h6{
+        font-weight: 500;
+        overflow:hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        text-overflow:ellipsis;
+        -webkit-box-orient: vertical;
+        white-space: wrap;
+        color: #2196f3;
+        text-align: left;
+        
+        font-size: 16px;
+        overflow-wrap: anywhere;
+        margin-top: -4px;
+    }
+    .news__content_readings>p{
+        font-size: 18px;
+      
+        margin: 10px;
+        }
+    .news__content{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: 10px;
+    
+    }
+    .news__content_img>img{
+    width: 100%;
+    height: 200px;
+    border-top-left-radius:10px ;
+    border-top-right-radius:10px ;
+    }
+    .news__content_readings>p{
+
+        font-weight: 500;
+        overflow:hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        text-overflow:ellipsis;
+        -webkit-box-orient: vertical;
+        white-space: wrap;
+        color: #333;
+        text-align: left;
+        
+        font-size: 16px;
+        overflow-wrap: anywhere;
+        margin-top: -4px;
+
+    }

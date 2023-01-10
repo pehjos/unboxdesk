@@ -1,0 +1,15 @@
+.accodion{
+    margin-left: 20%;
+    margin-top: 50px;
+    margin-right: 20%;
+    }
+    
+    @media(max-width:700px){
+        .accodion{
+            margin-left: 5%;
+            margin-top: 50px;
+            margin-right: 5%;
+            }
+    
+    
+    }

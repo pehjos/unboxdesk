@@ -1,0 +1,88 @@
+.services{
+    margin-top: 40px ;
+    margin-left: 20% ;
+    margin-right: 20% ;         
+    }
+    
+    .services>h5{
+    color: seagreen;
+    border-bottom: 3px solid rgb(245, 221, 83);
+    border-radius: 10px;
+    margin-right: 87%;
+    }
+    
+    .service_container{
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    width: 100%;
+    }
+    
+    .service_content{
+    margin: 10px;
+    }
+    
+    .service_icon{
+    margin: 10px;
+    color: tomato;
+    }
+    
+    .service_display{
+    display: flex ;
+    font-size: 12px;
+    width: 0;
+    height: 200px;
+    
+    }
+    
+    .card{
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; 
+    height: 600px;             
+    }
+    
+    @media(max-width:700px) {
+    .services{
+    margin-top: 40px ;
+    margin-left: 5px;
+    margin-right: 5px ;         
+    }
+    
+    .services>h5{
+    color: seagreen;
+    border-bottom: 3px solid rgb(245, 221, 83);
+    border-radius: 10px;
+    margin-right: 87%;
+    }
+    
+    .service_container{
+    display: flex;
+    height:200px;
+    width: 100%;
+    margin:10px;
+    }
+    
+    .service_content{
+    margin: 2px;
+    }
+    
+    .service_icon{
+    margin: 0px;
+    color: tomato;
+    }
+    
+    .service_display{
+    display: flex; 
+    font-size: 12px;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    }
+    
+    .card{
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; 
+    height: 800px;     
+    width: 100%;        
+    }          
+    }
+    
+    
+    

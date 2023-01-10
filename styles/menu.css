@@ -1,0 +1,37 @@
+.menu{
+    background-color:black;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-left: 50%;
+    width: 195px;
+    height: 240px;
+    position: absolute;
+    margin-top: 50px;
+    z-index: 100;
+    }
+    .menu__list>p{
+    
+                color:white;
+               margin: 10px;
+                  
+    /* border-bottom: 2px dotted tomato; */
+    font-size: 14px;
+    
+    }
+    .icon{
+    background-color:rgb(209, 74, 74)
+    }
+    .icon>.MuiSvgIcon-root{
+                color:pink;
+    margin: 10px;
+                   }
+    
+    .carousel-indicators [data-bs-target] {
+    
+    background-color:white;
+    height:20px;
+    border: 1px solid red;
+    width:20px;
+    border-radius:50px;
+    }

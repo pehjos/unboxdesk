@@ -1,0 +1,81 @@
+.tech__child_content{
+    display:flex;
+    align-items: center;
+    margin: 10px;
+    
+    }
+    .tech__child_content_right>.MuiSvgIcon-root{
+    display:flex;
+    align-items: center;
+    margin: 10px;
+    justify-content: flex-start;
+    height: 190px;
+    width: 90px;
+    color: tomato;
+    opacity: 0.1px;
+    }
+    .tech__child_content_left>h5{
+        font-weight: 700;
+        overflow:hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        text-overflow:ellipsis;
+        -webkit-box-orient: vertical;
+        white-space: wrap;
+        color: #2196f3;
+        text-align: left;
+        
+        font-size: 18px;
+        overflow-wrap: anywhere;
+        margin-top: -4px;
+    }
+    
+    .tech__child{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: 10px;
+    }
+    .whatwedo__tab{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    }
+    .headerName>h5{
+        font-weight: 500;
+        overflow:hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        text-overflow:ellipsis;
+        -webkit-box-orient: vertical;
+        white-space: wrap;
+        color: #333;
+        text-align: left;
+        
+        font-size: 16px;
+        overflow-wrap: anywhere;
+        margin-top: -4px;
+    }
+    .tech__child_content_right>img{
+        height: 100px;
+        width: 100px;
+
+
+
+    }
+    .tech__child_content_left>p{
+
+        font-weight: 500;
+        overflow:hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        text-overflow:ellipsis;
+        -webkit-box-orient: vertical;
+        white-space: wrap;
+        color: #333;
+        text-align: left;
+        
+        font-size: 14px;
+        overflow-wrap: anywhere;
+        margin-top: -4px;
+
+    }

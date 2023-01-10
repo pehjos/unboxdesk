@@ -1,0 +1,137 @@
+.contact_content{
+    z-index: 100;
+ 
+margin-left: 20%;
+margin-right: 20%;
+margin-top: 50px;
+background-color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.contact_content>h5{
+    text-shadow: 1px 1px #2196f3; 
+    margin-top: 10px;
+}
+.contact__head1{
+display: flex;
+margin: 10px;
+align-items: center;
+justify-content: space-evenly;
+}
+.contact__head1>p{
+  font-size: 14px;
+  color: white;
+  text-shadow: 1px 1px #2196f3; 
+  border-radius: 50px;
+  margin: 5px;
+  padding: 4px;
+    background-color: #2195f373;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    }
+.contact__inputs{
+
+ 
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+flex-direction: column;
+
+
+}
+.contact__inputs>.MuiTextField-root{
+
+ 
+    margin: 10px;
+    display: flex;
+    align-items: center;
+
+flex-direction: column;
+
+
+}
+.contact__btn{
+   align-items: center;
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+    }
+.contact__btn>input{
+    align-items: center;
+    outline-width: 0;
+    border: 0;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+background-color: rgba(0, 128, 0, 0.432);
+width: 190px;
+justify-content: center;
+padding: 5px;
+}
+.contact{
+background-image: linear-gradient(rgba(0, 0, 0, 0.521),rgba(0, 0, 0, 0.548)),url("https://bgr.com/wp-content/uploads/2021/07/apple-iphone-12-6.jpg?quality=82&strip=all&w=1440&h=810&crop=1");
+margin-top: 20px;
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+.contact__footer>p{
+margin: 10px;
+
+}
+.contact__footer>h6{
+color: blue;
+   margin: 10px; 
+    }
+.contact__fottercontent{
+background-color: #2196f3;
+
+
+}
+.contact__fottercontent_head>p{
+font-size: 26px;
+color: white;
+text-align: center;
+}
+.contact__fottercontent_con_1{
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 10px;
+font-size: 18px;
+
+}
+.contact__fottercontent_con_1>p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    color: white;
+    }
+    .contact__fottercontent_con_1>h5{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+       background-color:rgb(35, 127, 247);
+     color: white;
+        width: 50px;
+        border-radius: 50px;
+
+        }
+    
+    /* Media query */
+@media(max-width:700px){
+    .contact_content{
+  
+    margin-left: 5%;
+    margin-right: 5%;
+
+    }
+
+}

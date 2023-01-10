@@ -1,0 +1,41 @@
+{
+  "name": "blog",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.4.6",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.9.2",
+    "@mui/styles": "^5.9.2",
+    "animated": "^0.2.2",
+    "bootstrap": "^5.2.0",
+    "bootstrap-icons": "^1.10.3",
+    "emailjs-com": "^3.2.0",
+    "framer-motion": "^8.4.0",
+    "mongodb": "^4.8.1",
+    "next": "12.2.3",
+    "next-auth": "^4.10.2",
+    "next-seo": "^5.5.0",
+    "react": "18.2.0",
+    "react-bootstrap": "^2.4.0",
+    "react-dom": "18.2.0",
+    "react-swipeable-views": "^0.14.0",
+    "react-tsparticles": "^2.1.4",
+    "recoil": "^0.7.4",
+    "sweetalert2": "^11.4.24",
+    "tsparticles": "^2.1.4",
+    "tsparticles-engine": "^2.1.4"
+  },
+  "devDependencies": {
+    "eslint": "8.20.0",
+    "eslint-config-next": "12.2.3"
+  }
+}
