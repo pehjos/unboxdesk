@@ -1,6 +1,6 @@
 html,
 body {
-  background-color: whitesmoke;
+  background-color: var(--grybg);
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -15,7 +15,7 @@ a {
 * {
   box-sizing: border-box;
 }
-
+/* 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -24,4 +24,224 @@ a {
     color: white;
     background: black;
   }
+} */
+.headflex{
+display: flex;
+align-items: center;
+width: 100%;
+overflow-x: scroll;
 }
+.home{
+  padding-bottom: 20px;
+  background-color:rgba(245, 245, 245, 0.658)
+}
+/* .home_center{
+  background-color: red;
+} */
+.home_list{
+  margin: 10px;
+
+}
+.home_list>p{
+  margin: 10px;
+  color: tomato;
+  font-weight: 700;
+}
+
+.videodisp{
+        width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap:10px;
+  margin-top: 0px;
+   }
+
+
+
+   /* theme */
+   [data-theme='dark'] body {
+    color: var(--accents-6);
+    background: rgb(0, 0, 0);
+    }
+    [data-theme='dark'] .ml-4 {
+    
+          background:rgb(15, 21, 34);
+    }
+    [data-theme='dark'],
+    [data-theme='dark'] .home {
+          color: var(--accents-6);
+    background: rgb(0, 0, 0);
+    }
+    [data-theme='dark'] .appBar{
+      color: #fff;
+      background:rgb(12, 20, 37);
+      }
+    [data-theme='dark'] .listCard{
+      color: #fff;
+      border: none;
+      background:rgb(12, 20, 37);
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      }
+    
+    [data-theme='dark'],
+    [data-theme='dark'] .video{
+          color: var(--accents-6);
+    background:rgb(15, 21, 34);
+    }
+    
+    [data-theme='dark'],
+    [data-theme='dark'] .card__contenttitle>h5{
+          color: var(--accents-6);
+    }
+    [data-theme='dark'],
+    [data-theme='dark'] .card__contentdescription p{
+          color: var(--accents-6);
+    }
+    
+    [data-theme='dark'] .img__card{
+    border: 1px solid rgb(19, 47, 76);
+    }
+    
+    [data-theme='dark'] .card__headerright>.MuiSvgIcon-root{
+    color: whitesmoke;
+    }
+    [data-theme='dark'],
+    [data-theme='dark'] .footer_card_icon{
+     color: var(--accents-6);
+    }
+    [data-theme='dark'],
+    [data-theme='dark'] .footer_card_icon>.MuiSvgIcon-root{
+     color: var(--accents-6);
+    }
+    [data-theme='dark'],
+    [data-theme='dark'] .card_footer_all{
+    color: white;
+    }
+    [data-theme='dark'],
+    [data-theme='dark'] .search_input{
+    color: #fff;
+    background:rgb(15, 21, 34);
+    border: 1px solid rgb(104, 103, 103);
+    
+    }
+    [data-theme='dark'] .search_input>input{
+      color: #fff;
+      background:rgb(15, 21, 34);
+      border: none;
+      
+      }
+    [data-theme='dark'] .listroute{
+
+    background:rgb(15, 21, 34);
+    }
+    [data-theme='dark'] .timeline-container{
+    color: #fff;
+    background:rgb(15, 21, 34);
+    }
+    [data-theme='dark'] .timeline-item-content::after {
+    color: #fff;
+    background:rgb(15, 21, 34);
+    }
+    [data-theme='dark'] .repost {
+    color: #fff;
+    background:rgb(15, 21, 34);
+    }
+    [data-theme='dark'] .topbar {
+    color: #fff;
+    background:rgb(15, 21, 34);
+    }
+    [data-theme='dark'] .topbar-child>h2{
+    color: #2196f3;
+    
+    }
+    [data-theme='light'] .topbar-child{
+    color: gray;
+    
+    }
+    [data-theme='dark'] .bottom{
+    color: #fff;
+    background:rgb(15, 21, 34);
+    }
+    [data-theme='dark'] .bottom-icons{
+    color: whitesmoke;
+    
+    }
+    [data-theme='dark'] .onyourmind{
+    color: #fff;
+    background:rgb(15, 21, 34);
+    }
+    [data-theme='dark'] .account{
+    color: #fff;
+    background:rgb(15, 21, 34);
+    }
+    [data-theme='dark'] .button>button{
+    color: #fff;
+    background:rgb(15, 21, 34);
+    border: 1px solid rgb(5, 12, 20) ;
+    }
+    [data-theme='dark'] .account>h4{
+    color: #fff;
+    background:rgb(15, 21, 34);
+    }
+    
+    [data-theme='dark'] .menus_child>p{
+    color: #fff;
+    
+    }
+    [data-theme='dark'] .profileview_left>h5{
+    color: #fff;
+    
+    }
+    [data-theme='dark'] .main__post{
+    color: #fff;
+    background:rgb(15, 21, 34);
+    }
+    [data-theme='dark'] .title__textArea>textarea{
+    color: #fff;
+    background:rgb(15, 21, 34);
+    }
+    [data-theme='dark'] .card__headerleft{
+    color: whitesmoke;
+    background:rgb(15, 21, 34);
+    }
+    [data-theme='dark'] .card__headerleft>p{
+    color: whitesmoke;
+    
+    }
+    [data-theme='dark'] .timeline-item{
+          background:rgb(15, 21, 34);
+    
+    }
+    [data-theme='dark'] .timeline-item-content{
+    margin-bottom: 5px;
+    
+    }
+    [data-theme='dark'] .dialogcard{
+          background:rgb(15, 21, 34);
+    color: #fff;
+    }
+    
+    [data-theme='dark']  .comment_prev_comments {
+    background-image: none;
+    }
+    [data-theme='dark']  .ttittename{
+    color: rgba(211, 211, 211, 0.473);
+    
+    }
+    [data-theme='light']  .notActive{
+          color: #333;
+          
+          }
+    [data-theme='dark']  .ttittename>p{
+    color:lightgrey;
+    
+          }
+    
+    [data-theme='dark'] .link_card{
+       
+         color:#2196f3 ;
+          }
+          [data-theme='light'] .link_card{
+       
+                color:lightgray ;
+                 }

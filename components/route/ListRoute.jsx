@@ -11,6 +11,12 @@ function ListRoute() {
     Trending|
 </div>
 <div className='list'>
+    Video|
+</div>
+<div className='list'>
+    review|
+</div>
+<div className='list'>
     Iphone|
 </div>
 <div className='list'>

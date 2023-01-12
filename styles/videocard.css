@@ -1,0 +1,53 @@
+.video_content{
+padding: 3px;
+    font-weight: 500;
+    overflow:hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    text-overflow:ellipsis;
+    -webkit-box-orient: vertical;
+    white-space: wrap;
+   color: gray;
+    text-align: left;
+    
+    font-size: 16px;
+    overflow-wrap: anywhere;
+    margin-top: -4px;
+}
+.video{
+background-color: rgb(238, 235, 235);
+border-top-left-radius: 10px;
+}
+.react-big-play-button{
+    background-color: red !important;
+  }
+  .video-react-button{
+  border: none !important;
+  border-radius: 999px !important;
+  }
+  .video-react{
+  border-top-right-radius: 10px !important;
+  border-top-left-radius: 10px !important;
+  background-color: #2195f35d !important;
+  width: 100% !important;
+  outline-width: 0 !important;
+  border: none !important;
+  }
+   .video-react-video {
+    border-top-right-radius: 10px !important;
+    border-top-left-radius: 10px !important;
+
+   object-fit: cover !important;
+  }
+  .video-react .video-react-poster{
+    background-color: #2195f35d !important;
+    border-top-right-radius: 10px !important;
+    border-top-left-radius: 10px !important;
+  
+  }
+  .video-react-progress-control{
+display: none !important;
+  }
+  .video-react-big-play-button:before{
+      color: tomato;
+  }

@@ -1,0 +1,31 @@
+.listCard{
+    display: flex;
+    align-items: center;
+margin-bottom: 10px;
+  background-color: white;
+  border-bottom: 1px solid lightgrey;
+
+}
+
+.listCard_image>img{
+width: 85px;
+margin-right: 10px;
+height: 66px;
+
+}
+.listCard_content{
+    width: 300px;
+    font-weight: 500;
+    overflow:hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    text-overflow:ellipsis;
+    -webkit-box-orient: vertical;
+    white-space: wrap;
+   color: gray;
+    text-align: left;
+    
+    font-size: 16px;
+    overflow-wrap: anywhere;
+    margin-top: -4px;
+}

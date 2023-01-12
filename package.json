@@ -24,15 +24,18 @@
     "next": "12.2.3",
     "next-auth": "^4.10.2",
     "next-seo": "^5.5.0",
-    "react": "18.2.0",
+    "next-themes": "^0.2.1",
+    "react": "^18.2.0",
     "react-bootstrap": "^2.4.0",
-    "react-dom": "18.2.0",
+    "react-dom": "^18.2.0",
     "react-swipeable-views": "^0.14.0",
     "react-tsparticles": "^2.1.4",
     "recoil": "^0.7.4",
+    "redux": "^4.2.0",
     "sweetalert2": "^11.4.24",
     "tsparticles": "^2.1.4",
-    "tsparticles-engine": "^2.1.4"
+    "tsparticles-engine": "^2.1.4",
+    "video-react": "^0.16.0"
   },
   "devDependencies": {
     "eslint": "8.20.0",
