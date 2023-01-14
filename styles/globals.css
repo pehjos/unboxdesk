@@ -60,12 +60,12 @@ overflow-x: scroll;
 
    /* theme */
    [data-theme='dark'] body {
-    color: var(--accents-6);
+    color: #fff;
     background: rgb(0, 0, 0);
     }
-    [data-theme='dark'] .ml-4 {
+    [data-theme='dark'] .icgrid {
     
-          background:rgb(15, 21, 34);
+        border:1px solid  #2195f357;
     }
     [data-theme='dark'],
     [data-theme='dark'] .home {
@@ -76,19 +76,33 @@ overflow-x: scroll;
       color: #fff;
       background:rgb(12, 20, 37);
       }
+      [data-theme='dark'] .menuCard_list{
+        color: var(--accents-6);
+        background:rgb(12, 20, 37);
+        }
     [data-theme='dark'] .listCard{
       color: #fff;
       border: none;
       background:rgb(12, 20, 37);
-      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+   
       }
     
+    [data-theme='dark'],
+    [data-theme='dark'] .listCard1{
+          color: var(--accents-6);
+    background:rgb(15, 21, 34);
+    border: none;
+    }
     [data-theme='dark'],
     [data-theme='dark'] .video{
           color: var(--accents-6);
     background:rgb(15, 21, 34);
     }
-    
+    [data-theme='dark'],
+    [data-theme='dark'] .product_card{
+          color: var(--accents-6);
+    background:rgb(15, 21, 34);
+    }
     [data-theme='dark'],
     [data-theme='dark'] .card__contenttitle>h5{
           color: var(--accents-6);
@@ -121,7 +135,7 @@ overflow-x: scroll;
     [data-theme='dark'] .search_input{
     color: #fff;
     background:rgb(15, 21, 34);
-    border: 1px solid rgb(104, 103, 103);
+    border:1px solid  #2195f317;
     
     }
     [data-theme='dark'] .search_input>input{

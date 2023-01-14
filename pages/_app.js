@@ -4,6 +4,8 @@ import '../styles/nav.css'
 import { ThemeProvider } from 'next-themes';
 import '../styles/search.css'
 import '../styles/listcard.css'
+import '../styles/menucard.css'
+import '../styles/productcard.css'
 import '../styles/route.css'
 import { NextSeo } from "next-seo";
 

@@ -4,18 +4,34 @@
 margin-bottom: 10px;
   background-color: white;
   border-bottom: 1px solid lightgrey;
+height: 100px;
+}
+.listCard1{
+  display: flex;
+  align-items: center;
+margin-bottom: 10px;
+background-color: white;
+border-bottom: 1px solid lightgrey;
+height: 130px;
 
 }
-
 .listCard_image>img{
-width: 85px;
+width: 100px;
 margin-right: 10px;
-height: 66px;
+height: 100px;
 
+}
+.ft>img{
+  height: 40px;
+  transform: rotate(90deg);
+}
+.ft>p{
+ color: red;
+ z-index: 90 !important;
 }
 .listCard_content{
     width: 300px;
-    font-weight: 500;
+margin-left: 4px;
     overflow:hidden;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -25,7 +41,7 @@ height: 66px;
    color: gray;
     text-align: left;
     
-    font-size: 16px;
+    font-size: 18px;
     overflow-wrap: anywhere;
     margin-top: -4px;
 }
