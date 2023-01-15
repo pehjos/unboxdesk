@@ -19,6 +19,32 @@ import { RecoilRoot } from "recoil";
 function MyApp({ Component, pageProps }) {
 
   return(
+    <>
+    <NextSeo
+        title="Best tech reviews for 2023"
+        titleTemplate="review gadget 2023"
+        defaultTitle="Technology news and release"
+        description="The number one stop for reviewing your gadget before buying them in 2023"
+        canonical="unboxdesk.com"
+        openGraph={{
+          url: "unboxdesk.com",
+          title: "unbox your new device with reviews",
+          description: "unboxdesk provide news feed for latest technology news you need to know",
+          images: [
+            {
+              url: "https://cdn.mos.cms.futurecdn.net/JMZ7CUFKVmQvdCYaxVrkWa-970-80.jpeg.webp",
+              width: 800,
+              height: 420,
+              alt: "iphone",
+            },
+          ],
+        }}
+        twitter={{
+          handle: "@pehjos",
+          site: "hookwal.com",
+          cardType: "hookwal from @Pehjos Inc",
+        }}
+      />
     <ThemeProvider>
     <RecoilRoot>
     <ChakraProvider>
@@ -28,6 +54,7 @@ function MyApp({ Component, pageProps }) {
    </ChakraProvider>
    </RecoilRoot>
    </ThemeProvider>
+   </>
   )
 }
 
