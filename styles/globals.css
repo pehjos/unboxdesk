@@ -25,11 +25,47 @@ a {
     background: black;
   }
 } */
+@media(max-width:670px){
+
+  .brand1{
+    display: none;
+  }
+ }
+@media(min-width:670px){
+  .home_center{
+    display: flex;}
+
+    .videodisp{
+      width: 100%;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap:10px;
+margin-top: 0px;
+ }
+ .brand2{
+   display: none;
+ }
+}
+
+
+
+
 .headflex{
 display: flex;
 align-items: center;
-width: 100%;
+
+justify-content: space-between;
 overflow-x: scroll;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.headflex::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.headflex {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 .home{
   padding-bottom: 20px;
@@ -47,7 +83,16 @@ overflow-x: scroll;
   color: tomato;
   font-weight: 700;
 }
-
+.brand1>p{
+  margin: 10px;
+  color: tomato;
+  font-weight: 700;
+}
+.brand2>p{
+  margin: 10px;
+  color: tomato;
+  font-weight: 700;
+}
 .videodisp{
         width: 100%;
   display: grid;
@@ -100,6 +145,11 @@ overflow-x: scroll;
     }
     [data-theme='dark'],
     [data-theme='dark'] .product_card{
+          color: var(--accents-6);
+    background:rgb(15, 21, 34);
+    }
+    [data-theme='dark'],
+    [data-theme='dark'] .menuCard1{
           color: var(--accents-6);
     background:rgb(15, 21, 34);
     }

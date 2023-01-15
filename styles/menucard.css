@@ -5,7 +5,13 @@ grid-template-columns: repeat(3,1fr);
 gap:10px;
 margin-top: 0px;
 }
-
+.menuCard1{
+    width: 100%;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap:10px;
+margin-top: 0px;background-color: rgba(255, 255, 255, 0.479);
+}
 .menuCard_list{
 display: flex;
 flex-direction: column;
@@ -16,3 +22,22 @@ border-radius: 3px;
 height: 80px;
 background-color: lightgrey;
 }
+.menuCard_list>img{
+    width: 100%;
+    height: 80px;
+}
+.menuCard_list1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    border-radius: 3px;
+    height: 80px;
+background-color: none;
+    }
+    .menuCard_list1>img{
+        width: 100%;
+        height: 70px;
+    }
+    

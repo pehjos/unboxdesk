@@ -1,11 +1,11 @@
 .listroute{
     display: flex;
     align-items: center;
-    width: 95%;
+
    
     overflow-x: scroll;
     margin: 10px;
-    background-color:#2196f3;
+    background-color:tomato;
 }
 .list{
 margin: 4px;
@@ -14,3 +14,14 @@ font-size: 18px;
 color: white;
 text-transform: capitalize;
 }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.listroute::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .listroute {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
