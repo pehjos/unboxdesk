@@ -6,8 +6,9 @@
     }
     .main__post{
     background-color: white;
-    height: 100vh;
-    
+
+    margin-left: 20%;
+    margin-right: 20%;
     }
     .main__posthead{
     display: flex;
@@ -35,6 +36,7 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
+
     }
     .tags{
     margin: 10px;
@@ -245,4 +247,13 @@ color: white;
     height: 600px;
     display: none;
     
+    }
+
+    @media(max-width:670px){
+        .main__post{
+            background-color: white;
+          
+            margin-left: 0%;
+            margin-right: 0%;
+            }
     }

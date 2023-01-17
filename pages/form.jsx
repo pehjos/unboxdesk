@@ -5,7 +5,7 @@ import { useRecoilState } from "recoil";
 import { modalState } from "../atoms/modalAtom";
 import { handlePostState } from "../atoms/postAtom";
 import { useRouter } from 'next/router'
-
+import dynamic from 'next/dynamic'
 
 
 import {
@@ -14,12 +14,64 @@ Close,Check,  ExpandLess, ExpandMore, InsertPhoto,Videocam
 
 } from '@mui/icons-material'
 
-
+const QuillNoSSRWrapper = dynamic(import('react-quill'), {
+    ssr: false,
+    loading: () => <p>Loading ...</p>,
+  })
+  
+  const modules = {
+    toolbar: [
+      [{ header: '1' }, { header: '2' }, { font: [] }],
+      [{ size: [] }],
+      ['bold', 'italic', 'underline', 'strike', 'blockquote'],
+      [
+        { list: 'ordered' },
+        { list: 'bullet' },
+        { indent: '-1' },
+        { indent: '+1' },
+      ],
+      ['link', 'image', 'video'],
+      ['clean'],
+    ],
+    clipboard: {
+      // toggle to add extra line breaks when pasting HTML:
+      matchVisual: false,
+    },
+  }
+  /*
+   * Quill editor formats
+   * See https://quilljs.com/docs/formats/
+   */
+  const formats = [
+    'header',
+    'font',
+    'size',
+    'bold',
+    'italic',
+    'underline',
+    'strike',
+    'blockquote',
+    'list',
+    'bullet',
+    'indent',
+    'link',
+    'image',
+    'video',
+    
+  ]
 function Form() {
- 
+    const [rich, setRich] = useState('');
+    console.log(rich,"hey pah")
   const router = useRouter()
 //   const { data: session } = useSession();
-  
+  // data from select field
+
+  const [category, setCategory] = useState("")
+
+  const changecategory = (newSelect) => {
+  setCategory(newSelect)
+  }
+
   const [handlePost, setHandlePost] = useRecoilState(handlePostState);
 
 // error handler
@@ -213,29 +265,34 @@ setTags(true)
 
 
 const [postData, setPostData] = useState({   provider:'',
-title:'',
-message:'',
+content:'',
+storelogo_link:'',
 tags:'',
 image:'',
+price:'',
 comments:[],
 likes:[],
-likeId:[],
+fav:[],
 video:'',
-email:"",
-reposter:"",
+name:"",
+category:"",
+img_link:"",
 createdAt:"",
-accountType:'',
-description:'',});
+video_link:'',
+store_link:'',});
 
 const clear = () => {
 setPostData({   userImg:'',
-title:'',
-message:'',
+
 tags:'',
 image:'',
 video:'',
-accountType:'',
-description:'', });
+name:"",
+img_link:"",
+createdAt:"",
+video_link:'',
+store_link:'',
+price:'',});
 };
 
 
@@ -249,7 +306,9 @@ const response = await fetch("/api/posts", {
     body: JSON.stringify({
      ...postData,
     image:url,
-    video:urlVid, 
+    content:rich,
+    video:urlVid,
+    category:category, 
     createdAt: new Date().toString(),
     }),
     headers: {
@@ -329,55 +388,116 @@ return (
 </div>
 <div className="profileImgItems">
 <div className="profileImg">
- 
+{/* select field */}
+<select  onChange={(event) => changecategory(event.target.value)}
+value={category}>
+<option value={""}>Post category</option>
+<option value="iphone">iphone</option>
+<option value="computer">computer</option>
+<option value="phone">phone</option>
+<option value="accessories">accessories</option>
+<option value="tv">tv</option>
+<option value="audio">audio</option>
+<option value="apps">apps</option>
+<option value="education"> education</option>
+<option value="food">wamfie</option>
+<option value="health">health</option>
+<option value="brands">brands</option>
+<option value="vehicle">vehicle</option>
+<option value="science">science</option>
+<option value="travel">travel</option>
+<option value="mobile">mobile</option>
+<option value="laptops">laptops</option>
+<option value="tablets">tablets</option>
+<option value="smartwatches">smartwatches</option>
+<option value="headset">headset</option>
+<option value="cammera">cammera</option>
+<option value="games">games</option>
+<option value="speakers">speakers</option>
+<option value="appliances">appliances</option>
+<option value="collers">collers</option>
+<option value="cars">cars</option>
+<option value="applesumsung">apple and sumsung</option>
+<option value="applenews">apple news</option>
+<option value="sumsung">sumsung</option>
+<option value="apple">apple</option>
+<option value="realme">realme</option>
+<option value="google">google</option>
+<option value="huawei">huawei</option>
+<option value="mi">mi</option>
+<option value="oneplus">oneplus</option>
+<option value="oppo">oppo</option>
+<option value="infinix">infinix</option>
+<option value="vivo">vivo</option>
+<option value="sonny">sonny</option>
+<option value="nokia">nokia</option>
+
+</select>
+
+
 </div>
 <div className="tags">
 <p>Tags</p>
 {tags?(<ExpandLess onClick={Tagss}/>):(<ExpandMore onClick={Tagss}/>)}
 {tags?(<div className="tags__elements">
 
-<input type="radio" id="Local" name="gender" value="local"
+<input type="radio" id="Local" name="gender" value="recent"
 onChange={(e)=>setPostData({...postData, tags:e.target.value})}
 />
-<label htmlFor="Local">Local </label><br/>
-<input type="radio" id="male" name="gender" value="world"
+<label htmlFor="Local">recent </label><br/>
+<input type="radio" id="male" name="gender" value="news"
 onChange={(e)=>setPostData({...postData, tags:e.target.value})}
 />
-<label htmlFor="male">World  </label><br/>
-<input type="radio" id="male" name="gender" value="science"
+<label htmlFor="male">news</label><br/>
+<input type="radio" id="male" name="gender" value="trending"
 onChange={(e)=>setPostData({...postData, tags:e.target.value})}/>
-<label htmlFor="male">Sceince </label><br/>
-<input type="radio" id="male" name="gender" value="technology"
+<label htmlFor="male">trending</label><br/>
+<input type="radio" id="male" name="gender" value="video"
 onChange={(e)=>setPostData({...postData, tags:e.target.value})}/>
-<label htmlFor="male">Technology</label><br/>
-<input type="radio" id="male" name="gender" value="sports"
+<label htmlFor="male">video</label><br/>
+<input type="radio" id="male" name="gender" value="review"
 onChange={(e)=>setPostData({...postData, tags:e.target.value})}/>
-<label htmlFor="male">Sports</label><br/>
-<input type="radio" id="male" name="gender" value="EntertainmenNews"
+<label htmlFor="male">review</label><br/>
+<input type="radio" id="male" name="gender" value="topstories"
 onChange={(e)=>setPostData({...postData, tags:e.target.value})}/>
-<label htmlFor="male">Entertainment</label><br/>
-<input type="radio" id="male" name="gender" value="gallery"
+<label htmlFor="male">top stories</label><br/>
+<input type="radio" id="male" name="gender" value="products"
 onChange={(e)=>setPostData({...postData, tags:e.target.value})}/>
-<label htmlFor="male">Gallery</label><br/>
-<input type="radio" id="male" name="gender" value="discovery"
+<label htmlFor="male">products</label><br/>
+<input type="radio" id="male" name="gender" value="store"
 onChange={(e)=>setPostData({...postData, tags:e.target.value})}/>
-<label htmlFor="male">Discovery</label><br/>
-<input type="radio" id="male" name="gender" value="top"
-onChange={(e)=>setPostData({...postData, tags:e.target.value})}/>
-<label htmlFor="male">Top Stories</label><br/>
-<input type="radio" id="male" name="gender" value="trend"
-onChange={(e)=>setPostData({...postData, tags:e.target.value})}/>
-<label htmlFor="male">Trending</label><br/>
+<label htmlFor="male">store</label><br/>
 </div>
 ):""
 }
 </div>
 </div>
 <div className="title__textArea">
-<textarea name="creator" id="input" placeholder="share your opinions ..." value={postData.title}
+{/* <textarea name="creator" id="input" placeholder="share your opinions ..." value={postData.title}
 onChange={(e)=>setPostData({...postData, title:e.target.value})}
 required
-/>
+/> */}
+<div className='otherinputs'>
+<input required type="text" placeholder="publisher name"value={postData.name}
+onChange={(e)=>setPostData({...postData,   name:e.target.value})}/>
+<input required type="text" placeholder="price"value={postData.price}
+onChange={(e)=>setPostData({...postData,   price:e.target.value})}/>
+<input required type="url" placeholder="https://imageurl"value={postData.img_link}
+onChange={(e)=>setPostData({...postData,   img_link:e.target.value})}/>
+<input required type="url" placeholder="https://videourl"value={postData.video_link}
+onChange={(e)=>setPostData({...postData,   video_link:e.target.value})}/>
+<input required type="url" placeholder="https://storeurl"value={postData.store_link}
+onChange={(e)=>setPostData({...postData,   store_link:e.target.value})}/>
+<input required type="url" placeholder="https://store logo url"value={postData.storelogo_link}
+onChange={(e)=>setPostData({...postData,   storelogo_link:e.target.value})}/>
+</div>
+{/* rich text editor */}
+
+<QuillNoSSRWrapper modules={modules} formats={formats} placeholder="describe your post"onChange={setRich} value={rich} theme="snow" />
+
+{/* end of editor */}
+
+
 
 </div>
 <div className="media___section">

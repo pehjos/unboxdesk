@@ -5,12 +5,14 @@ import HeadlineCard from '../../components/head/headCard'
 import ListRoute from '../../components/route/ListRoute'
 import Search from '../../components/search/Search'
 import VideoCard from '../../components/Cards/listCard/videoCard'
-import ProductCard from '../../components/Cards/listCard/ProductCard'
 import MenuCard from '../../components/Cards/listCard/MenuCard'
 import BrandCard from '../../components/Cards/listCard/Brands'
 import ImageCard from '../../components/Cards/listCard/ProductImage'
 import Store from '../../components/Cards/listCard/Stores'
 import Footer from '../../components/Cards/listCard/Footer'
+import dynamic from 'next/dynamic';
+import  { NextPage } from 'next'
+const  ProductCard = dynamic(() => import('../../components/Cards/listCard/ProductCard'), { ssr: false })
 function Home() {
   return (
     <div className='home'>
@@ -75,7 +77,7 @@ price="$600"
 />
 <ProductCard
 img="https://m.media-amazon.com/images/I/71id+wwTw-L._AC_SY200_.jpg"
-content="This is the price of iphone 14 on market today"
+content={<p>hello peh<u>this is me</u></p>}
 btn="Buy"
 price="$600"
 />

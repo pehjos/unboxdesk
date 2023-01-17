@@ -1,5 +1,6 @@
 import '../styles/globals.css'
 import "../node_modules/video-react/dist/video-react.css"; // import css
+import "../node_modules/react-quill/dist/quill.snow.css";
 import '../styles/nav.css'
 import { ThemeProvider } from 'next-themes';
 import '../styles/search.css'
