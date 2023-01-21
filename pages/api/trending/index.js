@@ -10,7 +10,7 @@ export default async function handler(req, res) {
     try {
       const posts = await db
         .collection("posts")
-        .find({tags:'recent'}).limit(4)
+        .find({tags:'trending'}).limit(6)
         .sort({ timestamp: -1 })
         .toArray();
       res.status(200).json(posts);

@@ -8,7 +8,7 @@ function ListCard({img,content}) {
         
         </div>
         <div className='listCard_content'>
-        <p>{content}</p>
+        <div dangerouslySetInnerHTML={{ __html: content}} />
         
         </div>
     </div>

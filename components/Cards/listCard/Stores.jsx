@@ -8,7 +8,7 @@ function ListCard({img,content,msg,storeimg}) {
         
         </div>
         <div className='listCard_content'>
-        <p>{content}</p>
+        <div dangerouslySetInnerHTML={{ __html: content}} />
         </div>
         <div className='ft'>
           <p>{msg}</p>

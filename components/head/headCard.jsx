@@ -1,26 +1,25 @@
 import React from "react";
 import styles from "./head.module.css";
-import { Avatar, IconButton } from "@mui/material";
-import { StarOutline } from "@mui/icons-material";
+import Markdown from 'react-markdown'
 
-import Image from "next/image";
-
-const HeadlineCard = ({ image }) => {
+const HeadlineCard = ({ image,content,type,name}) => {
   return (
     <div className={styles.headlineCard}>
       <div className={styles.image__wrapper}>
         <div className={styles.category}>
-          <span>Technology</span>
+          <span>{type}</span>
         </div>
         <img className={styles.image} height={700} width={600} src={image} alt="Hi" />
         <div className={styles.cardInfo}>
           <h4 className={styles.title}>
-          How to install Cydia on any iPhone Step 01: Go to www.cydiacloud.com from the Safari web browser on your iDevice Step 02: Tap on  button Step 03: Cydia Cloud installer will take a few
+            
+
+<div dangerouslySetInnerHTML={{ __html: content}} />
           </h4>
           <div className={styles.bottom}>
             <div className={styles.source}>
            
-              <p>Hookwal</p>
+              <p>{name}</p>
             </div>
             <div className={styles.bottomRight}>
 

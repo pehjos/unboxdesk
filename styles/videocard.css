@@ -9,14 +9,14 @@ padding: 3px;
     white-space: wrap;
    color: gray;
     text-align: left;
-    
+    font-family: 'Quicksand', sans-serif;
     font-size: 16px;
     overflow-wrap: anywhere;
     margin-top: -4px;
 }
 .video{
 background-color: white;
-
+padding-top: 0px;
 border-radius: 6px;
 }
 .react-big-play-button{
@@ -26,29 +26,44 @@ border-radius: 6px;
   border: none !important;
   border-radius: 999px !important;
   }
+  
+  .video-react-controls-enabled{
+   padding-top: 0px !important; 
+}
   .video-react{
   border-top-right-radius: 10px !important;
   border-top-left-radius: 10px !important;
   background-color: #2195f35d !important;
+  height: 200px !important;
   width: 100% !important;
   outline-width: 0 !important;
   border: none !important;
+padding-top: 0px;
   }
    .video-react-video {
     border-top-right-radius: 10px !important;
     border-top-left-radius: 10px !important;
-
+    height: 200px ;
    object-fit: cover !important;
   }
   .video-react .video-react-poster{
     background-color: #2195f35d !important;
     border-top-right-radius: 10px !important;
     border-top-left-radius: 10px !important;
-  
+    height: 200px !important;
   }
+  .video-react .video-react-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px ;
+}
+@media(max-width:670px){
   .video-react-progress-control{
 display: none !important;
   }
+}
   .video-react-big-play-button:before{
       color: tomato;
   }

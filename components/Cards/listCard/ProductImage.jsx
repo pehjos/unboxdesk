@@ -7,7 +7,7 @@ function ProductCard({img,url,btn,price,content}) {
         <div className='product_card_cont'>
         <img src={img}/>
 
-<p>{content}</p>
+        <div dangerouslySetInnerHTML={{ __html: content}} />
 
         
         </div>

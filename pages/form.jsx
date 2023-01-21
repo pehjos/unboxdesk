@@ -23,7 +23,10 @@ const QuillNoSSRWrapper = dynamic(import('react-quill'), {
     toolbar: [
       [{ header: '1' }, { header: '2' }, { font: [] }],
       [{ size: [] }],
-      ['bold', 'italic', 'underline', 'strike', 'blockquote'],
+      ['bold', 'italic', 'underline', 'strike', 'blockquote','code-block','code'],
+      [
+        { 'color': [] }, { 'background': [] }
+      ],
       [
         { list: 'ordered' },
         { list: 'bullet' },
@@ -38,6 +41,7 @@ const QuillNoSSRWrapper = dynamic(import('react-quill'), {
       matchVisual: false,
     },
   }
+  
   /*
    * Quill editor formats
    * See https://quilljs.com/docs/formats/
@@ -52,13 +56,19 @@ const QuillNoSSRWrapper = dynamic(import('react-quill'), {
     'strike',
     'blockquote',
     'list',
+    'background',
+    'color',
     'bullet',
     'indent',
     'link',
     'image',
-    'video',
+    'code',
+    'code-block',
+    'video'
+    
     
   ]
+  
 function Form() {
     const [rich, setRich] = useState('');
     console.log(rich,"hey pah")

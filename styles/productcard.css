@@ -25,3 +25,20 @@
     color: tomato;
   
   }
+  .cont{
+
+    overflow:hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    text-overflow:ellipsis;
+    -webkit-box-orient: vertical;
+    white-space: wrap;
+   color: gray;
+    text-align: left;
+    overflow-wrap: anywhere;
+ margin: 10px;
+}
+.product_card_cont{
+padding: 10px;
+font-family: 'Quicksand', sans-serif;
+}

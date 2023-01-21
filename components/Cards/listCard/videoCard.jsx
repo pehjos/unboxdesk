@@ -1,19 +1,19 @@
 import React from 'react';
 import { Player } from 'video-react';
 
-function videoCard() {
+function videoCard({poster,video,content}) {
   return (
     <div className='video'>
            <div className='video_vid'>
            <Player
       playsInline
-      poster="/assets/poster.png"
-      src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+      poster={poster}
+      src={video}
     />
         
         </div>
         <div className='video_content'>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+        <div className='cont' dangerouslySetInnerHTML={{ __html: content}} />
         
         </div>
     </div>
