@@ -27,7 +27,7 @@ background-color: lightgrey;
     width: 100%;
     height: 80px;
 }
-.menuCard_list1{
+.menuCard_list1>a{
     font-family: 'Quicksand', sans-serif;
     display: flex;
     flex-direction: column;
@@ -35,7 +35,7 @@ background-color: lightgrey;
     justify-content: center;
     padding: 3px;
     border-radius: 3px;
-    height: 80px;
+width: 80px;
 background-color: none;
     }
     .menuCard_list1>img{

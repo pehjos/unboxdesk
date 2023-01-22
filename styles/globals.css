@@ -33,10 +33,17 @@ a {
  }
 @media(min-width:670px){
   .home_center{
-    display: flex;}
+    display: flex;
+    margin-left: 5%;
+    background-color: rgb(243, 243, 243);
+    margin-right: 5%;
+
+  }
 
     .videodisp{
       width: 100%;
+      background-color: red;
+    
 display: grid;
 grid-template-columns: repeat(3,1fr);
 gap:10px;

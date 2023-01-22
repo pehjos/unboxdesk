@@ -172,7 +172,7 @@ NewsPosts
 </div>
 <div>
 <div className='home_list'>
-   <p>Tv's PRODUCT  </p>
+   <p>Tvs PRODUCT  </p>
    <div className='videodisp'>
 
    { trendingPosts?.map((post) => <ProductCard
