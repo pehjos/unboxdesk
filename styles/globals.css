@@ -15,7 +15,7 @@ a {
 * {
   box-sizing: border-box;
 }
-/* 
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -24,7 +24,7 @@ a {
     color: white;
     background: black;
   }
-} */
+}
 @media(max-width:670px){
 
   .brand1{
@@ -121,7 +121,7 @@ overflow-x: scroll;
       color: #fff;
       background:rgb(12, 20, 37);
       }
-      [data-theme='dark'] .menuCard_list{
+      [data-theme='dark'] .menuCard_list>a{
         color: var(--accents-6);
         background:rgb(12, 20, 37);
         }

@@ -1,6 +1,7 @@
 .product_card{
   border-radius: 6px;
   background-color: white;
+  color:red
 }
 .product_card_cont>img{
     width: 100%;

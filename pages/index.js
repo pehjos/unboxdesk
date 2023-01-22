@@ -7,7 +7,7 @@ export default function HomeLayout() {
     <div >
       <Head>
         <title>unboxdesk</title>
-        <meta name="description" content="read about iphones before buying you preffered " />
+        <meta name="description" content="unboxdesk.com provides yoiu with the latest technology gadget information" />
         <link rel="icon" href="https://www.apple.com/newsroom/images/product/iphone/standard/Apple_announce-iphone12pro_10132020.jpg.landing-big_2x.jpg" />
 
       </Head>
