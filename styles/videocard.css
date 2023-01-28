@@ -18,6 +18,7 @@ padding: 3px;
 background-color: white;
 padding-top: 0px;
 border-radius: 6px;
+height: 200px !important;
 }
 .react-big-play-button{
     background-color: red !important;
@@ -34,7 +35,7 @@ border-radius: 6px;
   border-top-right-radius: 10px !important;
   border-top-left-radius: 10px !important;
   background-color: #2195f35d !important;
-  height: 200px !important;
+  height: 100px !important;
   width: 100% !important;
   outline-width: 0 !important;
   border: none !important;
@@ -43,21 +44,21 @@ padding-top: 0px;
    .video-react-video {
     border-top-right-radius: 10px !important;
     border-top-left-radius: 10px !important;
-    height: 200px ;
+    height: 100px ;
    object-fit: cover !important;
   }
   .video-react .video-react-poster{
     background-color: #2195f35d !important;
     border-top-right-radius: 10px !important;
     border-top-left-radius: 10px !important;
-    height: 200px !important;
+    height: 100px !important;
   }
   .video-react .video-react-video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 200px ;
+    height: 100px ;
 }
 @media(max-width:670px){
   .video-react-progress-control{
