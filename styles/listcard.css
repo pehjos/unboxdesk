@@ -9,7 +9,7 @@ font-family: 'Quicksand', sans-serif;
 color: #333 !important;
 font-weight: 600;
 width: 100%;
-
+font-size: 16px !important;
 }
 .listCard1{
   display: flex;
@@ -22,6 +22,7 @@ font-family: 'Quicksand', sans-serif;
 color: #333 !important;
 font-weight: 600;
 width: 100%;
+font-size: 16px !important;
 }
 .listCard2{
   display: flex;
@@ -33,7 +34,7 @@ height: 130px;
 color: #333 !important;
 font-weight: 600;
 font-family: 'Quicksand', sans-serif;
-
+font-size: 16px !important;
 }
 
 .listCard_image>img{
@@ -69,7 +70,7 @@ margin-left: 5px;
     color: #333 !important;
     text-align: left;
     overflow-wrap: anywhere;
-    font-size: 18px;
+    font-size: 16px !important;
 font-weight: 600;
 
 
@@ -86,7 +87,7 @@ font-weight: 600;
   color: #333 !important;
   text-align: left;
   overflow-wrap: anywhere;
-  font-size: 18px;
+  font-size: 16px !important;
 font-weight: 600;
 
 }

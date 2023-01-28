@@ -1,6 +1,6 @@
 html,
 body {
-  font-weight: 400;
+  font-size: 16px !important;
 
   background-color: var(--grybg);
   padding: 0;

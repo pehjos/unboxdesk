@@ -1,14 +1,15 @@
 .listroute{
     display: flex;
     align-items: center;
-
+    font-size: 16px !important;
    justify-content: space-between;
     overflow-x: scroll;
     margin: 10px;
+    font-size: 16px !important;
     background-color:tomato;
 }
 .list{
-
+  font-size: 16px !important;
 display: flex;
 font-size: 18px;
 color: white;
@@ -20,6 +21,7 @@ color: white;
   font-family: 'Quicksand', sans-serif;
  border-right: 1px solid lightgray;
   display: flex;
+  font-size: 16px !important;
   padding: 2px;
   align-items: center;
   justify-content: center;
