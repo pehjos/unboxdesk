@@ -106,7 +106,8 @@ NewsPosts
   </div>
    
     <ListRoute/>
-   <div className='home_center' >
+    <div className='home_center' >
+     <div className='first_list'>
    <div className='home_list' >
       <p>TOP STORIES </p>
   { topPosts?.map((post) => <ListCard
@@ -115,13 +116,12 @@ NewsPosts
 
     }
 
-<div className='home_list'>
+</div>
+</div>
 
-</div>
-</div>
-<div>
+  <div className='middle'>
 <div className='home_list'>
-   <p>FOOD TECHNOLOGY</p>
+   <p>FOOD TECHNOLOGY </p>
    <div className='videodisp'>
 
    { NewsPosts?.map((post) => <ProductCard
@@ -132,14 +132,8 @@ btn="Buy"
 />)
 }
 
-
 </div>
-
 </div>
-
-
-
-
 
 </div>
 
@@ -161,6 +155,7 @@ StorePosts?.map((post) => <Store
 
 </div>
 </div>
+
 </div> 
 </div> 
 <Footer/>       

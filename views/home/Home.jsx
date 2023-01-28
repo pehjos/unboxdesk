@@ -149,7 +149,7 @@ NewsPosts
   return (
     <div className='home'>
       <Head>Trending products on amazon</Head>  
-  <div>
+  
       
     <Appbar/>
     <Search/>
@@ -168,9 +168,13 @@ realtimePosts?.map((post) => <HeadlineCard
     /> */}
  
   </div>
-   
+   <div className='route_lis'>
     <ListRoute/>
+    </div>
+    {/*home center start  */}
    <div className='home_center' >
+     {/* top stories */}
+     <div className='first_list'>
    <div className='home_list' >
       <p>TOP STORIES </p>
   { topPosts?.map((post) => <ListCard
@@ -179,9 +183,11 @@ realtimePosts?.map((post) => <HeadlineCard
 
     }
 
-
 </div>
-<div>
+</div>
+{/* top stories end */}
+
+{/* middle starting */}
 
   <div className='middle'>
 <div className='home_list'>
@@ -243,7 +249,10 @@ btn="Buy"
    </div>
 </div>
 
-</div>
+
+{/* middle end */}
+
+{/* right starting */}
 <div className='right'>
 <div className='home_list'>
 <p>POPULAR STORES </p>
@@ -261,8 +270,11 @@ StorePosts?.map((post) => <Store
 
 </div>
 </div>
+{/* right end */}
+
 </div> 
-</div> 
+{/* home center end */}
+
 <Footer/>       
 </div>
   )

@@ -3,7 +3,7 @@ import React from 'react'
 function ListCard({img,content,msg,storeimg}) {
   return (
     <div className='listCard1'>
-            <div className='listCard_image'>
+            <div className='listCard_image1'>
         <img src={img}/>
         
         </div>

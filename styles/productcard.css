@@ -26,13 +26,13 @@ justify-content: center;
 }
 .product_card_footer>p{
   color: orange;
-  color: #333 !important;
+
 font-weight: 600;
 
 }
 .product_card_footer>h3{
     color: tomato;
-    color: #333 !important;
+  
 font-weight: 600;
   
   }

@@ -8,6 +8,7 @@ height: 130px;
 font-family: 'Quicksand', sans-serif;
 color: #333 !important;
 font-weight: 600;
+width: 100%;
 
 }
 .listCard1{
@@ -20,7 +21,7 @@ height: 130px;
 font-family: 'Quicksand', sans-serif;
 color: #333 !important;
 font-weight: 600;
-
+width: 100%;
 }
 .listCard2{
   display: flex;
@@ -36,13 +37,21 @@ font-family: 'Quicksand', sans-serif;
 }
 
 .listCard_image>img{
-width: 100px;
+width:200px;
 margin-right: 10px;
 height: 100px;
 
 }
+.listCard_image1{
+  width:400px;
+  margin-right: 10px;
+  height: 100px;
+  margin-left: 3px;
+}
 .ft>img{
-  height: 40px;
+  height: 10px;
+  width: 250px;
+object-fit:fill;
   transform: rotate(90deg);
 }
 .ft>p{
@@ -50,38 +59,34 @@ height: 100px;
  z-index: 90 !important;
 }
 .listCard_content{
-    width: 350px;
-margin-left: 4px;
+margin-left: 5px;
     overflow:hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 4;
     text-overflow:ellipsis;
     -webkit-box-orient: vertical;
     white-space: wrap;
     color: #333 !important;
-    font-weight: 600;
     text-align: left;
-    
-    font-size: 18px;
     overflow-wrap: anywhere;
-    margin-top: -4px;
-    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+font-weight: 600;
+
+
+
 }
 .listCard_content2{
-  width: 600px;
-margin-left: 4px;
+  margin-left: 5px;
   overflow:hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 4;
   text-overflow:ellipsis;
   -webkit-box-orient: vertical;
   white-space: wrap;
-color: #333 !important;
-font-weight: 600;
+  color: #333 !important;
   text-align: left;
-  
-  font-size: 18px;
   overflow-wrap: anywhere;
-  margin-top: -4px;
-  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+font-weight: 600;
+
 }
