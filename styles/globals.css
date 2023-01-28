@@ -1,15 +1,18 @@
 html,
 body {
+  font-weight: 400;
+
+  font-size: 20px;
   background-color: var(--grybg);
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
 }
 
 * {
@@ -31,6 +34,7 @@ a {
     display: none;
   }
  }
+
 @media(min-width:670px){
   .home_center{
     display: flex;
@@ -38,12 +42,13 @@ a {
     background-color: rgb(243, 243, 243);
     margin-right: 5%;
 
+    justify-content: space-between;
   }
 
     .videodisp{
       width: 100%;
     
-    
+
 display: grid;
 grid-template-columns: repeat(3,1fr);
 gap:10px;
@@ -109,10 +114,9 @@ overflow-x: scroll;
    }
 
 
-
    /* theme */
    [data-theme='dark'] body {
-    color: #fff;
+    color: #fff !important;
     background: rgb(0, 0, 0);
     }
     [data-theme='dark'] .icgrid {
@@ -131,6 +135,7 @@ overflow-x: scroll;
       [data-theme='dark'] .menuCard_list>a{
         color: var(--accents-6);
         background:rgb(12, 20, 37);
+        color: #fff;
         }
     [data-theme='dark'] .listCard{
       color: #fff;
@@ -143,21 +148,31 @@ overflow-x: scroll;
     [data-theme='dark'] .listCard1{
           color: var(--accents-6);
     background:rgb(15, 21, 34);
-    border: none;
+    color: #fff;
     }
+    [data-theme='dark'] .listCard2{
+      color: var(--accents-6);
+background:rgb(15, 21, 34);
+color: #fff;
+}
+    [data-theme='dark'] .home_center{
+      color: #fff;
+background:rgba(15, 21, 34, 0.788);
+
+}
     [data-theme='dark'],
     [data-theme='dark'] .video{
-          color: var(--accents-6);
+      color: #fff;
     background:rgb(15, 21, 34);
     }
     [data-theme='dark'],
     [data-theme='dark'] .product_card{
-          color: var(--accents-6);
+      color: #fff;
     background:rgb(15, 21, 34);
     }
     [data-theme='dark'],
     [data-theme='dark'] .menuCard1{
-          color: var(--accents-6);
+      color: #fff;
     background:rgb(15, 21, 34);
     }
     [data-theme='dark'],

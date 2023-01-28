@@ -7,6 +7,13 @@ function Footer() {
 <p>&copy;  Pehjos Inc</p>
 <p>City-Sunyani,Ghana</p>
 <p>PLOT 347 KOTOKROM</p>
+<div className='keywords'>
+<p> @ Apple  @ Iphone  @ Sumsung  @ LG  @ Techno</p>
+<p> @ Reviews  @ Itel  @ Vivo  @Google  @ Nokia</p>
+<p> @ Philips  @ Binatone  @ Infinix  @ Huawei  @ Mi</p>
+<p> @Redmi  @ ReamMe  @ Cars  @ Latest Phones  @ Lenovo</p>
+<p> @ Hp  @ Dell  @ Ipad  @ Tablet  @ Mac Book</p>
+</div>
 
     </div>
   )

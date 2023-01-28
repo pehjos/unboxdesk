@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Appbar from '../../components/appbar/Appbar'
 import ListCard from '../../components/Cards/listCard/ListCard'
+import AppleList from '../../components/Cards/listCard/AppleList'
 import ListRoute from '../../components/route/ListRoute'
 import Search from '../../components/search/Search'
 import VideoCard from '../../components/Cards/listCard/videoCard'
@@ -178,14 +179,11 @@ realtimePosts?.map((post) => <HeadlineCard
 
     }
 
-<div className='home_list'>
-<div className="brand1">
-   <p>BRANDS </p>
-  <BrandCard className="brand1"/>
-</div>
-</div>
+
 </div>
 <div>
+
+  <div className='middle'>
 <div className='home_list'>
    <p>PRODUCTS </p>
  <MenuCard/>
@@ -221,7 +219,7 @@ btn="Buy"
 </div>
 <div className='home_list'>
    <p>APPLE HOME </p>
-   {ApplePosts?.map((post) => <ListCard
+   {ApplePosts?.map((post) => <AppleList
  content={post.content} img={post.image} key={post._id} 
  post={post}
 
@@ -229,13 +227,7 @@ btn="Buy"
 />)
 }
 </div>
-<div className='home_list'>
 
-   <div className="brand2">
-   <p>BRANDS </p>
-  <BrandCard />
-  </div>
-</div>
 
 <div className='home_list'>
    <p>NEWS </p>
@@ -251,7 +243,7 @@ btn="Buy"
    </div>
 </div>
 
-
+</div>
 <div className='right'>
 <div className='home_list'>
 <p>POPULAR STORES </p>

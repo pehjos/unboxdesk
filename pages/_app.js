@@ -8,6 +8,7 @@ import '../styles/listcard.css'
 import '../styles/menucard.css'
 import '../styles/productcard.css'
 import '../styles/route.css'
+import '../styles/footer.css'
 import { NextSeo } from "next-seo";
 
 import '../styles/home.css'

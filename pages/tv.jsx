@@ -121,7 +121,7 @@ NewsPosts
 </div>
 <div>
 <div className='home_list'>
-   <p>TV DEVICES</p>
+   <p>TV</p>
    <div className='videodisp'>
 
    { NewsPosts?.map((post) => <ProductCard
