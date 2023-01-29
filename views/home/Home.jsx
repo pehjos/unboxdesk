@@ -240,6 +240,7 @@ btn="Buy"
    <div className='videodisp'>
   { NewsPosts?.map((post) => <ImageCard
  content={post.content} img={post.image} key={post._id} 
+ post={post}
 />)
 
     }

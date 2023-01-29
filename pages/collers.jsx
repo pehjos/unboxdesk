@@ -96,7 +96,15 @@ NewsPosts
 
   return (
     <div className='home'>
-      <Head>Trending products on amazon</Head>  
+        <Head>
+  <title>fans and airconditioner you should check to buy in 2023 </title>
+  <meta name="description" content="fans and airconditioner you should check to buy in 2023 that will save your money" />
+  <meta property="og:title" content="fans and airconditioner you should check to buy in 2023 that you did not know" />
+  <meta property="og:description" content="Unboxdesk provide the latest review of apple|sumsung|latest new|LG |oppo|vivo|google products" />
+  <meta property="og:url" content="https:/unboxdesk.com/collers" />
+  <meta property="og:type" content="website" />
+ 
+</Head>   
   <div>
       
     <Appbar/>

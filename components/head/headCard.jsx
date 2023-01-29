@@ -1,10 +1,19 @@
 import React from "react";
 import styles from "./head.module.css";
-import Markdown from 'react-markdown'
+import { useRouter } from 'next/router';
 
-const HeadlineCard = ({ image,content,type,name}) => {
+const HeadlineCard = ({ image,content,type,name,post}) => {
+  // open post
+const router = useRouter();
+
+const openPost = (id) => {
+  router.push({ pathname: '/details',query: { id }});
+
+};
+
+
   return (
-    <div className={styles.headlineCard}>
+    <div className={styles.headlineCard} onClick={() => openPost(post._id)} >
       <div className={styles.image__wrapper}>
         <div className={styles.category}>
           <span>{type}</span>

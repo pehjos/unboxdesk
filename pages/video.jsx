@@ -96,7 +96,15 @@ NewsPosts
 
   return (
     <div className='home'>
-      <Head>Trending products on amazon</Head>  
+   <Head>
+  <title>checkout latest products videos </title>
+  <meta name="description" content="checkout latest products videos that will save your money" />
+  <meta property="og:title" content="checkout latest products videos that you did not know" />
+  <meta property="og:description" content="Unboxdesk provide the latest review of apple|sumsung|latest new|LG |oppo|vivo|google products" />
+  <meta property="og:url" content="https:/unboxdesk.com/video" />
+  <meta property="og:type" content="website" />
+ 
+</Head>   
   <div>
       
     <Appbar/>

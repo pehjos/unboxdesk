@@ -1,9 +1,16 @@
 import React from 'react';
 import { Player } from 'video-react';
+import { useRouter } from 'next/router';
+function videoCard({poster,video,content,post}) {
+  // open post
+const router = useRouter();
 
-function videoCard({poster,video,content}) {
+const openPost = (id) => {
+  router.push({ pathname: '/details',query: { id }});
+
+};
   return (
-    <div className='video'>
+    <div className='video' >
            <div className='video_vid'>
            <Player
       playsInline
@@ -12,7 +19,7 @@ function videoCard({poster,video,content}) {
     />
         
         </div>
-        <div className='video_content'>
+        <div className='video_content' onClick={() => openPost(post._id)}>
         <div className='cont' dangerouslySetInnerHTML={{ __html: content}} />
         
         </div>

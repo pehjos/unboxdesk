@@ -6,6 +6,8 @@ import { ThemeProvider } from 'next-themes';
 import '../styles/search.css'
 import '../styles/listcard.css'
 import '../styles/menucard.css'
+import '../styles/details.css'
+import '../styles/menucard.css'
 import '../styles/productcard.css'
 import '../styles/route.css'
 import '../styles/footer.css'

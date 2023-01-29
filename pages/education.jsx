@@ -96,7 +96,15 @@ NewsPosts
 
   return (
     <div className='home'>
-      <Head>Trending products on amazon</Head>  
+   <Head>
+  <title>best way to enhance your childs education  in 2023 </title>
+  <meta name="description" content="best way to enhance your childs education  in 2023 that will save your money" />
+  <meta property="og:title" content="best way to enhance your childs education  in 2023 that you did not know" />
+  <meta property="og:description" content="Unboxdesk provide the latest review of apple|sumsung|latest new|LG |oppo|vivo|google products" />
+  <meta property="og:url" content="https:/unboxdesk.com/education" />
+  <meta property="og:type" content="website" />
+ 
+</Head>   
   <div>
       
     <Appbar/>
@@ -121,7 +129,7 @@ NewsPosts
 
   <div className='middle'>
 <div className='home_list'>
-   <p>EDUCATIONAL PRODUCTS </p>
+   <p>EDUCATIONAL </p>
    <div className='videodisp'>
 
    { NewsPosts?.map((post) => <ProductCard

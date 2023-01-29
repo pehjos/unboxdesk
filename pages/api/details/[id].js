@@ -9,14 +9,24 @@ export default async function handler(req, res) {
 
   const { db } = await connectToDatabase();
 
-  
-if (method === "GET") {
+  if (method === "GET") {
     try {
-      const postId = req.params.id;
-      const post = await db.collection("posts").findOne({ _id: ObjectId(postId) });
+      // check if the id is a valid ObjectId
+      if (!ObjectId.isValid(id)) {
+        res.status(400).json({ message: 'Invalid post id' });
+        return;
+      }
+
+      const post = await db.collection("posts").findOne({ _id: new ObjectId(id) });
+      
+      if (!post) {
+        res.status(404).json({ message: 'Post not found' });
+        return;
+      }
+      
       res.status(200).json(post);
     } catch (error) {
-      res.status(500).json(error);
+      res.status(500).json({ message: error.message });
     }
   }
 

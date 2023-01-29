@@ -96,7 +96,15 @@ NewsPosts
 
   return (
     <div className='home'>
-      <Head>Trending products on amazon</Head>  
+   <Head>
+  <title>best latest cars  to buy in 2023 </title>
+  <meta name="description" content="best latest cars  to buy in 2023 that will save your money" />
+  <meta property="og:title" content="best latest cars  to buy in 2023 that you did not know" />
+  <meta property="og:description" content="Unboxdesk provide the latest review of apple|sumsung|latest new|LG |oppo|vivo|google products" />
+  <meta property="og:url" content="https:/unboxdesk.com/cars" />
+  <meta property="og:type" content="website" />
+ 
+</Head> 
   <div>
       
     <Appbar/>

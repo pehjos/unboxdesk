@@ -1,8 +1,15 @@
 import React from 'react'
+import { useRouter } from 'next/router';
+function ListCard({img,content,msg,storeimg,post}) {
+  // open post
+const router = useRouter();
 
-function ListCard({img,content,msg,storeimg}) {
+const openPost = (id) => {
+  router.push({ pathname: '/details',query: { id }});
+
+};
   return (
-    <div className='listCard1'>
+    <div className='listCard1' onClick={() => openPost(post._id)}>
             <div className='listCard_image1'>
         <img src={img}/>
         
