@@ -9,7 +9,7 @@ import Magnifier from '../components/Cards/listCard/Magnifier'
 import { useRouter } from 'next/router';
 import Stores from '../components/Cards/listCard/Details'
 const fetcher = (...args) => fetch(...args).then((res) => res.json())
-function datails() { 
+function Details() { 
   
   const router = useRouter();
   const {id}  = router.query;
@@ -71,4 +71,4 @@ console.log(data,"booooom")
   )
 }
 
-export default datails
+export default Details
