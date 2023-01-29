@@ -1,7 +1,7 @@
 import React from 'react';
 import { Player } from 'video-react';
 import { useRouter } from 'next/router';
-function videoCard({poster,video,content,post}) {
+function VideoCard({poster,video,content,post}) {
   // open post
 const router = useRouter();
 
@@ -27,4 +27,4 @@ const openPost = (id) => {
   )
 }
 
-export default videoCard
+export default VideoCard
