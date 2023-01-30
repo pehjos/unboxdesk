@@ -43,3 +43,32 @@ background-color: rgb(158, 30, 8);
   .notActive{
 color: whitesmoke !important;
   }
+  @media(max-width:670px){
+    .list{
+     margin: 5px;
+     padding: 5px;
+     border-right: none !important;
+     background-color: #000;
+     border-radius: 30px;
+ 
+    }
+    .listroute{
+   
+      background-color:transparent;
+  }
+  .active{
+    border-right: none !important;
+    background-color: #2196f3;
+    border-radius: 30px;
+      }
+      .list>a{
+        color: white;
+          font-family: 'Quicksand', sans-serif;
+         border-right:none;
+          display: flex;
+          font-size: 16px !important;
+          padding: 2px;
+          align-items: center;
+          justify-content: center;
+        }
+  }
