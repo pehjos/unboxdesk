@@ -98,6 +98,11 @@ NewsPosts
     <div className='home'>
          <Head>
   <title>Latest news on product reviews </title>
+  <link
+          rel="canonical"
+          href="https://unboxdesk.com/news"
+          key="canonicalas"
+        />
   <meta name="description" content="Latest news on product reviews " />
   <meta property="og:title" content="Latest news on product reviews " />
   <meta property="og:description" content="Unboxdesk provide the latest review of apple|sumsung|latest new|LG |oppo|vivo|google products" />

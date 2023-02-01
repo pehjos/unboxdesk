@@ -98,6 +98,11 @@ NewsPosts
     <div className='home'>
          <Head>
   <title>science  </title>
+  <link
+          rel="canonical"
+          href="https://unboxdesk.com/science"
+          key="canonicalr"
+        />
   <meta name="description" content="science  that will save your money" />
   <meta property="og:title" content="science  that you did not know" />
   <meta property="og:description" content="Unboxdesk provide the latest review of apple|sumsung|latest new|LG |oppo|vivo|google products" />

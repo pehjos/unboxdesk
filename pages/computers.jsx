@@ -98,10 +98,15 @@ NewsPosts
     <div className='home'>
       <Head>
   <title>Latest computers and setups  to buy in 2023 </title>
+  <link
+          rel="canonical"
+          href="https://unboxdesk.com/computers"
+          key="canonical"
+        />
   <meta name="description" content="Latest computers and setups  to buy in 2023 that will save your money" />
   <meta property="og:title" content="Latest computers and setups  to buy in 2023 that you did not know" />
   <meta property="og:description" content="Unboxdesk provide the latest review of apple|sumsung|latest new|LG |oppo|vivo|google products" />
-  <meta property="og:url" content="https:/unboxdesk.com/acessories" />
+  <meta property="og:url" content="https:/unboxdesk.com/computers" />
   <meta property="og:type" content="website" />
  
 </Head> 

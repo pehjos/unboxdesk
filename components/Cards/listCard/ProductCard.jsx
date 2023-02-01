@@ -11,7 +11,7 @@ const openPost = (id) => {
   return (
     <div className='product_card' >
         
-        <div className='product_card_cont' onClick={() => openPost(post._id)}>
+        <div className='product_card_cont1' onClick={() => openPost(post._id)}>
         <img src={img||'https://drive.google.com/file/d/1vlVfW7lXPJ1W7Sml712kS9Hxwwr6fDRy/view?usp=share_link'} />
 
         <div className='cont' dangerouslySetInnerHTML={{ __html: content}} />

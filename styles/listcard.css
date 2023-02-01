@@ -38,10 +38,8 @@ font-size: 16px !important;
 }
 
 .listCard_image>img{
-width:200px;
-margin-right: 10px;
-height: 100px;
 
+margin-left: 10px;
 }
 .listCard_image1{
  
@@ -50,7 +48,7 @@ height: 100px;
   margin-left: 3px;
 }
 .ft>img{
-  height: 10px;
+  height: 20px;
   width: 250px;
 object-fit:fill;
   transform: rotate(90deg);
@@ -72,7 +70,7 @@ margin-left: 5px;
     overflow-wrap: anywhere;
     font-size: 16px !important;
 font-weight: 600;
-
+margin-left: 40px;
 
 
 }
@@ -89,5 +87,5 @@ font-weight: 600;
   overflow-wrap: anywhere;
   font-size: 16px !important;
 font-weight: 600;
-
+margin-left: 40px;
 }

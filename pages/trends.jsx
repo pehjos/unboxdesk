@@ -98,6 +98,11 @@ NewsPosts
     <div className='home'>
         <Head>
   <title>best trending products reviews </title>
+  <link
+          rel="canonical"
+          href="https://unboxdesk.com/trends"
+          key="canonicala"
+        />
   <meta name="description" content="best trending products reviews that will save your money" />
   <meta property="og:title" content="best trending products reviews that you did not know" />
   <meta property="og:description" content="Unboxdesk provide the latest review of apple|sumsung|latest new|LG |oppo|vivo|google products" />

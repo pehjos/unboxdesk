@@ -37,7 +37,7 @@ color: white;
     scrollbar-width: none;  /* Firefox */
   }
   .active{
-color: white !important;
+
 background-color: rgb(158, 30, 8);
   }
   .notActive{
@@ -48,9 +48,9 @@ color: whitesmoke !important;
      margin: 5px;
      padding: 5px;
      border-right: none !important;
-     background-color: #000;
+    background-color: rgba(0,0,0,0.05);;
      border-radius: 30px;
- 
+ color: #333 !important;
     }
     .listroute{
    
@@ -58,11 +58,12 @@ color: whitesmoke !important;
   }
   .active{
     border-right: none !important;
-    background-color: #2196f3;
+  
     border-radius: 30px;
+    
       }
       .list>a{
-        color: white;
+        color: #000000 !important;
           font-family: 'Quicksand', sans-serif;
          border-right:none;
           display: flex;
@@ -70,5 +71,6 @@ color: whitesmoke !important;
           padding: 2px;
           align-items: center;
           justify-content: center;
+          font-weight: 700;
         }
   }

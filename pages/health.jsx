@@ -98,6 +98,11 @@ NewsPosts
     <div className='home'>
         <Head>
   <title>health technology </title>
+  <link
+          rel="canonical"
+          href="https://unboxdesk.com/health"
+          key="canonicalg"
+        />
   <meta name="description" content="health technology that will save your money" />
   <meta property="og:title" content="health technology that you did not know" />
   <meta property="og:description" content="Unboxdesk provide the latest review of apple|sumsung|latest new|LG |oppo|vivo|google products" />

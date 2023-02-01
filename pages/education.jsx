@@ -98,6 +98,11 @@ NewsPosts
     <div className='home'>
    <Head>
   <title>best way to enhance your childs education  in 2023 </title>
+  <link
+          rel="canonical"
+          href="https://unboxdesk.com/education"
+          key="canonicalht"
+        />
   <meta name="description" content="best way to enhance your childs education  in 2023 that will save your money" />
   <meta property="og:title" content="best way to enhance your childs education  in 2023 that you did not know" />
   <meta property="og:description" content="Unboxdesk provide the latest review of apple|sumsung|latest new|LG |oppo|vivo|google products" />

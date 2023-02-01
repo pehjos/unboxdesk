@@ -98,10 +98,15 @@ NewsPosts
     <div className='home'>
    <Head>
   <title>best audio devices and speaker to buy in 2023 </title>
+  <link
+          rel="canonical"
+          href="https://unboxdesk.com/audio"
+          key="canonical3"
+        />
   <meta name="description" content="best audio devices and speaker to buy in 2023 that will save your money" />
   <meta property="og:title" content="best audio devices and speaker to buy in 2023 that you did not know" />
   <meta property="og:description" content="Unboxdesk provide the latest review of apple|sumsung|latest new|LG |oppo|vivo|google products" />
-  <meta property="og:url" content="https:/unboxdesk.com/speaker" />
+  <meta property="og:url" content="https:/unboxdesk.com/audio" />
   <meta property="og:type" content="website" />
  
 </Head> 

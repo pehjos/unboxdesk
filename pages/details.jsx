@@ -24,10 +24,11 @@ console.log(data,"booooom")
     <div className='details'>
   <Head>
   <title>{data.category}</title>
+
   <meta name="description" content="2023 products review |iphone |sumsung" />
   <meta property="og:title" content="This is the latest review blog post" />
   <meta property="og:description" content="Unboxdesk provide the latest review of apple products" />
-  <meta property="og:url" content="https:/unboxdesk.com/news" />
+
   <meta property="og:type" content="website" />
  
 </Head>
