@@ -2,13 +2,12 @@
   border-radius: 6px;
   background-color: white;
 
-  height: 220px;
   color: #333 !important;
 font-weight: 600;
 }
 .product_card_cont>img{
-  
-height: 100px;
+ 
+height: 100px !important;
 object-fit: contain;
 display: flex;
 margin: 10px;
