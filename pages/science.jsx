@@ -159,7 +159,6 @@ btn="Buy"
 StorePosts?.map((post) => <Store
  content={post.content} img={post.image} key={post._id} 
 
- storeimg={post.storelogo_link}
  post={post} />)
 
     }

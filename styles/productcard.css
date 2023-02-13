@@ -9,6 +9,7 @@ font-weight: 600;
 .img_sec{
 
   display: flex;
+  inline-size: 175px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -52,6 +53,7 @@ font-weight: 600;
     overflow-wrap: break-word;
 
 }
+
 .text{
   padding: 3px;
   font-weight: 500;
@@ -60,9 +62,8 @@ font-weight: 600;
   -webkit-line-clamp: 3;
   text-overflow:ellipsis;
   -webkit-box-orient: vertical;
-  white-space: wrap;
+  white-space: wrap !important;
  color: #333;
-  text-align: left;
 
   font-family: 'Quicksand', sans-serif;
   font-size: 16px;
