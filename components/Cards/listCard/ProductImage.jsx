@@ -14,7 +14,7 @@ const openPost = (id) => {
         
         <div className='product_card_cont' onClick={() => openPost(post._id)}>
           <div className='img_sec'>
-        <Image width={100} height={100} src={img} blurDataURL={img} placeholder="blur" alt={img}/>
+        <Image width={100} height={100} src={img} blurDataURL={img} placeholder="blur" alt="best reviews"/>
 
         <div className='text' dangerouslySetInnerHTML={{ __html: content}} />
         </div>

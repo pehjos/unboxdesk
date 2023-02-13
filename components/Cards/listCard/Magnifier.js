@@ -49,7 +49,7 @@ function ImageMagnifier({
           // close magnifier
           setShowMagnifier(false);
         }}
-        alt={src}
+        alt="product review"
       />
 
       <div

@@ -14,7 +14,7 @@ const router = useRouter();
   return (
     <div className='listCard' onClick={() => openPost(post._id)} >
             <div className='listCard_image'>
-        <Image width={900} height={900} src={img} alt={img} placeholder="blur" blurDataURL={img}/>
+        <Image width={900} height={900} src={img} alt="best product" placeholder="blur" blurDataURL={img}/>
         
         </div>
         <div className='listCard_content'>
