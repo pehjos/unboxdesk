@@ -5,11 +5,17 @@ margin-bottom: 10px;
   background-color: white;
  border-radius: 5px;
 height: 130px;
+justify-content: space-between;
 font-family: 'Quicksand', sans-serif;
 color: #333 !important;
 font-weight: 600;
 width: 100%;
+flex: 1;
 font-size: 16px !important;
+}
+.listCard_image{
+
+padding: 20px;
 }
 .listCard1{
   display: flex;
@@ -37,26 +43,7 @@ font-family: 'Quicksand', sans-serif;
 font-size: 16px !important;
 }
 
-.listCard_image>img{
 
-margin-left: 10px;
-}
-.listCard_image1{
- 
-  margin-right: 10px;
-  height: 100px;
-  margin-left: 3px;
-}
-.ft>img{
-  height: 20px;
-  width: 250px;
-object-fit:fill;
-  transform: rotate(90deg);
-}
-.ft>p{
- color: red;
- z-index: 90 !important;
-}
 .listCard_content{
 margin-left: 5px;
     overflow:hidden;
@@ -70,7 +57,7 @@ margin-left: 5px;
     overflow-wrap: anywhere;
     font-size: 16px !important;
 font-weight: 600;
-margin-left: 40px;
+padding: 2px;
 
 
 }

@@ -13,11 +13,9 @@ import '../styles/route.css'
 import '../styles/footer.css'
 import { NextSeo } from "next-seo";
 
-import '../styles/home.css'
 import '../styles/form.css'
 import '../styles/videocard.css'
-// import 'bootstrap/dist/css/bootstrap.min.css';
-import '../styles/accodion.css'
+
 import { ChakraProvider } from '@chakra-ui/react'
 import { RecoilRoot } from "recoil";
 function MyApp({ Component, pageProps }) {

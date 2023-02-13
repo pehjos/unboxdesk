@@ -492,13 +492,13 @@ required
 onChange={(e)=>setPostData({...postData,   name:e.target.value})}/>
 <input required type="text" placeholder="price"value={postData.price}
 onChange={(e)=>setPostData({...postData,   price:e.target.value})}/>
-<input required type="url" placeholder="https://imageurl"value={postData.img_link}
+{/* <input required type="url" placeholder="https://imageurl"value={postData.img_link}
 onChange={(e)=>setPostData({...postData,   img_link:e.target.value})}/>
 <input required type="url" placeholder="https://videourl"value={postData.video_link}
-onChange={(e)=>setPostData({...postData,   video_link:e.target.value})}/>
+onChange={(e)=>setPostData({...postData,   video_link:e.target.value})}/> */}
 <input required type="url" placeholder="https://storeurl"value={postData.store_link}
 onChange={(e)=>setPostData({...postData,   store_link:e.target.value})}/>
-<input required type="url" placeholder="https://store logo url"value={postData.storelogo_link}
+<input required type="url" placeholder="button holder"value={postData.storelogo_link}
 onChange={(e)=>setPostData({...postData,   storelogo_link:e.target.value})}/>
 </div>
 {/* rich text editor */}
@@ -531,10 +531,7 @@ onChange={(e)=>setPostData({...postData,   storelogo_link:e.target.value})}/>
 
 <InsertPhoto id="photo"  onClick={choseImg}/>
 <Videocam id="video" onClick={chosevideo}/>
-<a target="_self" href="https://forecastmall.com"><img src="https://lh6.googleusercontent.com/-7_kmLfjMX0w/AAAAAAAAAAI/AAAAAAAAAAA/ZnOCWZoPC90/s60-c-k-mo/photo.jpg"/></a>
-<a target="_self" href="https://forecastmall.com"><img src="https://assets.swappie.com/iphone11provihreaCC88.jpg"/></a>
-<a target="_self" href="https://forecastmall.com"><img src="https://i1.wp.com/www.euroscientist.com/wp-content/uploads/2020/04/chelsea-WvusC5M-TM8-unsplash-scaled.jpg?fit=2560%2C1920&ssl=1"/></a>
-<a target="_self" href="https://forecastmall.com"><img src="https://cdn2.vectorstock.com/i/1000x1000/73/31/black-and-red-business-card-template-vector-14297331.jpg"/></a>
+
 </div>
 </div>
 <div className="confirm" id="confirm">

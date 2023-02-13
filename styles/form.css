@@ -68,8 +68,8 @@
     margin: 10px;
     display: flex;
     align-items: center;
-    justify-content:space-between ;
-    overflow-x: scroll;
+    /* justify-content:space-between ; */
+    /* overflow-x: scroll; */
     
     }
     .media___sectionImageOption>a>img{

@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./head.module.css";
 import { useRouter } from 'next/router';
-
+import Image from 'next/image'
 const HeadlineCard = ({ image,content,type,name,post}) => {
   // open post
 const router = useRouter();
@@ -18,7 +18,7 @@ const openPost = (id) => {
         <div className={styles.category}>
           <span>{type}</span>
         </div>
-        <img className={styles.image} height={700} width={600} src={image} alt="Hi" />
+        <Image className={styles.image} height={700} width={600} src={image} alt={image} placeholder="blur" blurDataURL={image}/>
         <div className={styles.cardInfo}>
           <h4 className={styles.title}>
             

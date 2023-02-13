@@ -43,7 +43,7 @@ module.exports = {
         },
       ],
       additionalSitemaps: [
-        'https:/unboxdesk.com/unboxdesk.xml',
+        'https:/unboxdesk.com/sitemap.xml',
       ],
     },
   }

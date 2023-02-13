@@ -9,6 +9,9 @@ display: flex;
 flex: 1;
 
 }
+.content_details{
+    padding: 20px;
+}
 .left_content{
     display: flex;
     flex-direction: column;
@@ -37,8 +40,24 @@ margin: 10px;
   font-weight: 800;
   margin: 10px;
 }
-.content_details{
+.content_details>div{
     font-weight: 600;
+    white-space: pre-wrap;
+}
+.magnifier{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+.downloadBtn{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    border-radius: 30px;
+    color: white;
+    background-color: #2196f3;
 }
 .content_details>h2{
     font-weight: 800;

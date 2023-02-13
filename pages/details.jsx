@@ -38,26 +38,29 @@ console.log(data,"booooom")
      
       <div className='left_content'>
       <div className='left'>
-     
-{/* <img src={data.image}/> */}
+      <div className="magnifier">
 {data.image !==""?(
-<Magnifier
-        width={"100%"}
+ 
+<Magnifier 
+        
         src={data.image}
       />):<video src={data.video} controls />
 }
-       <a href={data?.store_link}>
+</div>
+       {/* <a href={data?.store_link}> */}
 <div className='content_details'>
         <div dangerouslySetInnerHTML={{ __html: data?.content}} /> 
-        <h2>price:{data.price}</h2>
+         <a href={data?.store_link}>
+      <button className='downloadBtn'>Download</button>
+      </a>
         </div>
       
-<div className='source'>
+{/* <div className='source'>
   <p>Get the product with low price from </p>
   <img src={data?.storelogo_link}/>
-</div>
+</div> */}
 
-</a>
+
 </div>
 </div>
 

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-// import "./styles.css";
+import Image from 'next/image'
 
 function ImageMagnifier({
   src,
@@ -20,7 +20,12 @@ function ImageMagnifier({
         width: width
       }}
     >
-      <img
+
+      <Image
+      placeholder="blur"
+      blurDataURL={src}
+   width={400}
+   height={400}
         src={src}
         style={{ height: height, width: width }}
         onMouseEnter={(e) => {
@@ -44,7 +49,7 @@ function ImageMagnifier({
           // close magnifier
           setShowMagnifier(false);
         }}
-        alt={"img"}
+        alt={src}
       />
 
       <div
