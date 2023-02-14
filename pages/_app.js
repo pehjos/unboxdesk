@@ -11,7 +11,7 @@ import '../styles/menucard.css'
 import '../styles/productcard.css'
 import '../styles/route.css'
 import '../styles/footer.css'
-import { NextSeo } from "next-seo";
+import {DefaultSeo} from 'next-seo';
 
 import '../styles/form.css'
 import '../styles/videocard.css'
@@ -22,31 +22,21 @@ function MyApp({ Component, pageProps }) {
 
   return(
     <>
-    <NextSeo
-        title="Best tech reviews for 2023"
-        titleTemplate="review gadget 2023"
-        defaultTitle="Technology news and release"
-        description="The number one stop for reviewing your gadget before buying them in 2023"
-        canonical="unboxdesk.com"
-        openGraph={{
-          url: "unboxdesk.com",
-          title: "unbox your new device with reviews",
-          description: "unboxdesk provide news feed for latest technology news you need to know",
-          images: [
-            {
-              url: "https://cdn.mos.cms.futurecdn.net/JMZ7CUFKVmQvdCYaxVrkWa-970-80.jpeg.webp",
-              width: 800,
-              height: 420,
-              alt: "iphone",
-            },
-          ],
-        }}
-        twitter={{
-          handle: "@pehjos",
-          site: "hookwal.com",
-          cardType: "hookwal from @Pehjos Inc",
-        }}
-      />
+     <DefaultSeo
+                title="Best Gadget Review - Best Products & Services Buying Guides & Ratings"
+                description="Gadget Review is a resource for the best electronics, appliances and services for your home. Our reviews are based on research and hand's-on testing."
+                openGraph={{
+                    type: 'website',
+                    locale: 'en_US',
+                    url: 'https://www.unboxdesk.com/',
+                    siteName: 'unboxdesk',
+                }}
+                twitter={{
+                    handle: '@pehjos',
+                    site: '@unboxdesk.com',
+                    cardType: 'summary_large_image',
+                }}
+            />
     <ThemeProvider>
     <RecoilRoot>
     <ChakraProvider>

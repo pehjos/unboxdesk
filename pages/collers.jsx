@@ -97,15 +97,7 @@ NewsPosts
   return (
     <div className='home'>
         <Head>
-  <title>fans and airconditioner you should check to buy in 2023 </title>
-  <link
-          rel="canonical"
-          href="https://unboxdesk.com/collers"
-          key="canonicalg"
-        />
-  <meta name="description" content="fans and airconditioner you should check to buy in 2023 that will save your money" />
-  <meta property="og:title" content="fans and airconditioner you should check to buy in 2023 that you did not know" />
-  <meta property="og:description" content="Unboxdesk provide the latest review of apple|sumsung|latest new|LG |oppo|vivo|google products" />
+  
   <meta property="og:url" content="https:/unboxdesk.com/collers" />
   <meta property="og:type" content="website" />
  

@@ -97,15 +97,7 @@ NewsPosts
   return (
     <div className='home'>
       <Head>
-  <title>best television set to buy in 2023 </title>
-  <link
-          rel="canonical"
-          href="https://unboxdesk.comtv"
-          key="canonicxal"
-        />
-  <meta name="description" content="best television set to buy in 2023 that will save your money" />
-  <meta property="og:title" content="best television set to buy in 2023 that you did not know" />
-  <meta property="og:description" content="Unboxdesk provide the latest review of apple|sumsung|latest new|LG |oppo|vivo|google products" />
+ 
   <meta property="og:url" content="https:/unboxdesk.com/tv" />
   <meta property="og:type" content="website" />
  

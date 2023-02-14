@@ -97,15 +97,7 @@ NewsPosts
   return (
     <div className='home'>
     <Head>
-  <title>popular brands to buy from in 2023 </title>
-  <link
-          rel="canonical"
-          href="https://unboxdesk.com/brands"
-          key="canonicala"
-        />
-  <meta name="description" content="popular brands to buy from in 2023 that will save your money" />
-  <meta property="og:title" content="popular brands to buy from in 2023 that you did not know" />
-  <meta property="og:description" content="Unboxdesk provide the latest review of apple|sumsung|latest new|LG |oppo|vivo|google products" />
+
   <meta property="og:url" content="https:/unboxdesk.com/brands" />
   <meta property="og:type" content="website" />
  

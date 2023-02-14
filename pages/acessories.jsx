@@ -3,7 +3,7 @@ import Appbar from '../components/appbar/Appbar'
 import ListCard from '../components/Cards/listCard/ListCard'
 import ListRoute from '../components/route/ListRoute'
 import Search from '../components/search/Search'
-
+import {NextSeo} from 'next-seo';
 import Store from '../components/Cards/listCard/Stores'
 import Footer from '../components/Cards/listCard/Footer'
 
@@ -95,21 +95,33 @@ setNewsPosts(responseData);
 NewsPosts
 
   return (
+    <>
     <div className='home'>
-   <Head>
-  <title>best accessories to buy in 2023 </title>
-  <link
-          rel="canonical"
-          href="https://unboxdesk.com/acessories"
-          key="canonical"
+    <NextSeo
+            title="buy auto parts review"
+            description="best accessories cheap to buy for iphone"
+            canonical="www.unboxdesk.com/acessories"
+            openGraph={{
+                type: 'article',
+                article: {
+                    publishedTime: '2022-06-21T23:04:13Z',
+                    modifiedTime: '2022-01-21T18:04:43Z',
+                    authors: [
+                        'Peh Atta Joseph',
+                        'Pehjos',
+                    ],
+                    tags: ['car', 'iphone', 'sumsung','tv', 'technology', 'tiktok'],
+                },
+                url: 'www.unboxdesk.com/acessories',
+                images: {
+                    url: 'https://www.bhphotovideo.com/cdn-cgi/image/format=auto,fit=scale-down,width=500,quality=95/https://www.bhphotovideo.com/images/images500x500/smallrig_3327_moft_x_snap_on_stand_1619786847_1636566.jpg',
+                    width: 850,
+                    height: 650,
+                    alt: 'iphone cover',
+                },
+                site_name: 'unboxdesk'
+            }}
         />
-  <meta name="description" content="best accessories to buy in 2023 that will save your money" />
-  <meta property="og:title" content="best accessories to buy in 2023 that you did not know" />
-  <meta property="og:description" content="Unboxdesk provide the latest review of apple|sumsung|latest new|LG |oppo|vivo|google products" />
-  <meta property="og:url" content="https:/unboxdesk.com/acessories" />
-  <meta property="og:type" content="website" />
- 
-</Head>  
   <div>
       
     <Appbar/>
@@ -173,6 +185,7 @@ StorePosts?.map((post) => <Store
 </div> 
 <Footer/>       
 </div>
+</>
   )
 }
 
