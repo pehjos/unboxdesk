@@ -49,7 +49,7 @@ console.log(data,"booooom")
 <div className='content_details'>
         <div dangerouslySetInnerHTML={{ __html: data?.content}} /> 
          <a href={data?.store_link}>
-      <button className='downloadBtn'>Download</button>
+      <button className='downloadBtn'>Buy Now</button>
       </a>
         </div>
       
