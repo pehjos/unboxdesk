@@ -498,7 +498,7 @@ onChange={(e)=>setPostData({...postData,   img_link:e.target.value})}/>
 onChange={(e)=>setPostData({...postData,   video_link:e.target.value})}/> */}
 <input required type="url" placeholder="https://storeurl"value={postData.store_link}
 onChange={(e)=>setPostData({...postData,   store_link:e.target.value})}/>
-<input required type="url" placeholder="button holder"value={postData.storelogo_link}
+<input required type="url" placeholder="https://store logo url"value={postData.storelogo_link}
 onChange={(e)=>setPostData({...postData,   storelogo_link:e.target.value})}/>
 </div>
 {/* rich text editor */}
