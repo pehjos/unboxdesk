@@ -54,7 +54,7 @@ useEffect(() => {
    };
 
    fetchTop();
- }, [handlePost]);
+ }, []);
  topPosts
 
 
@@ -73,7 +73,7 @@ useEffect(() => {
    };
 
    fetchStore();
- }, [handlePost]);
+ }, []);
 topPosts
 // fetch news
 useEffect(() => {
@@ -89,7 +89,7 @@ setNewsPosts(responseData);
   };
 
   fetchVideo();
-}, [handlePost]);
+}, []);
 NewsPosts
 
   return (

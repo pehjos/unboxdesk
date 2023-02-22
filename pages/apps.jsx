@@ -36,7 +36,7 @@ function Home({post}) {
      };
  
      fetchPosts();
-   }, [handlePost]);
+   }, []);
    realtimePosts
 //  console.log(realtimePosts,"posts")
 
