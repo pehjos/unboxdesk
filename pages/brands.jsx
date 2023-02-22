@@ -36,7 +36,7 @@ function Home({post}) {
      };
  
      fetchPosts();
-   }, [handlePost]);
+   }, []);
    realtimePosts
 //  console.log(realtimePosts,"posts")
 
@@ -55,7 +55,7 @@ useEffect(() => {
    };
 
    fetchTop();
- }, [handlePost]);
+ }, []);
  topPosts
 
 
@@ -74,7 +74,7 @@ useEffect(() => {
    };
 
    fetchStore();
- }, [handlePost]);
+ }, []);
 topPosts
 // fetch news
 useEffect(() => {
@@ -90,7 +90,7 @@ setNewsPosts(responseData);
   };
 
   fetchVideo();
-}, [handlePost]);
+}, []);
 NewsPosts
 
   return (

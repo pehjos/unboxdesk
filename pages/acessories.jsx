@@ -1,5 +1,5 @@
 import Head from 'next/head'
-
+import {NextSeo} from 'next-seo';
 import { useEffect, useState } from "react";
 import { useRecoilState } from "recoil";
 import { handlePostState, useSSRPostsState } from "../atoms/postAtom";
