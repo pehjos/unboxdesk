@@ -1,17 +1,16 @@
 import Head from 'next/head'
-import Appbar from '../components/appbar/Appbar'
-import ListCard from '../components/Cards/listCard/ListCard'
-import ListRoute from '../components/route/ListRoute'
-import Search from '../components/search/Search'
 
-import Store from '../components/Cards/listCard/Stores'
-import Footer from '../components/Cards/listCard/Footer'
 
 import { useEffect, useState } from "react";
 import { useRecoilState } from "recoil";
 import { handlePostState, useSSRPostsState } from "../atoms/postAtom";
-const  HeadlineCard = dynamic(() => import('../components/head/headCard'), { ssr: false })
 import dynamic from 'next/dynamic';
+const  Appbar = dynamic(() => import('../components/appbar/Appbar'), { ssr: false })
+const  ListCard = dynamic(() => import('../components/Cards/listCard/ListCard'), { ssr: false })
+const  ListRoute = dynamic(() => import('../components/route/ListRoute'), { ssr: false })
+const  Search = dynamic(() => import('../components/search/Search'), { ssr: false })
+const  Store = dynamic(() => import('../components/Cards/listCard/Stores'), { ssr: false })
+const  Footer = dynamic(() => import('../components/Cards/listCard/Footer'), { ssr: false })
 
 const  ProductCard = dynamic(() => import('../components/Cards/listCard/ProductCard'), { ssr: false })
 function Home({post}) {

@@ -22,11 +22,12 @@ export default function HomeLayout() {
                 }}
             />
       <Head>
+            
+      <link rel="shortcut icon" href="../assets/ub.jpg" />
         <title>Best Gadget Review - Best Products & Services Buying Guides & Ratings</title>
      
         <meta name="description" content="Gadget Review is a resource for the best electronics, appliances and services for your home. Our reviews are based on research and hand's-on testing." />
-       
-
+   
       </Head>
       <div className="App">
   <Home/>

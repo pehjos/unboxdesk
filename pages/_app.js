@@ -3,6 +3,7 @@ import "../node_modules/video-react/dist/video-react.css"; // import css
 import "../node_modules/react-quill/dist/quill.snow.css";
 import '../styles/nav.css'
 import { ThemeProvider } from 'next-themes';
+import Head from 'next/head'
 import '../styles/search.css'
 import '../styles/listcard.css'
 import '../styles/menucard.css'
@@ -37,6 +38,10 @@ function MyApp({ Component, pageProps }) {
                     cardType: 'summary_large_image',
                 }}
             />
+            <Head>
+                  
+        <link rel="shortcut icon" href="../assets/ub.jpg" />
+            </Head>
     <ThemeProvider>
     <RecoilRoot>
     <ChakraProvider>

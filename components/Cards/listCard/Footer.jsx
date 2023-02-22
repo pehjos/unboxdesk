@@ -5,7 +5,7 @@ function Footer() {
     <div className='footer'>
      <p>All rights reserved &copy;  2023 unboxdesk reviews</p>   
 <p>&copy;  Pehjos Inc</p>
-<p>City-Sunyani,Ghana</p>
+<p>Los Angeles</p>
 <p>PLOT 347 KOTOKROM</p>
 <div className='keywords'>
 <p> @ Apple  @ Iphone  @ Sumsung  @ LG  @ Techno</p>

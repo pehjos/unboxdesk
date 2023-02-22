@@ -148,7 +148,7 @@ NewsPosts
 
   return (
     <div className='home'>
-      <Head>Trending products on amazon</Head>  
+      <Head>Best Reviews</Head>  
   
       
     <Appbar/>
