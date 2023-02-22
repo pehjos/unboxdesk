@@ -38,10 +38,7 @@ function MyApp({ Component, pageProps }) {
                     cardType: 'summary_large_image',
                 }}
             />
-            <Head>
-                  
-        <link rel="shortcut icon" href="../assets/ub.jpg" />
-            </Head>
+         
     <ThemeProvider>
     <RecoilRoot>
     <ChakraProvider>
