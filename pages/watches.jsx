@@ -1,5 +1,5 @@
 import Head from 'next/head'
-
+import dynamic from 'next/dynamic';
 import { useEffect, useState } from "react";
 import { useRecoilState } from "recoil";
 import { handlePostState, useSSRPostsState } from "../atoms/postAtom";
