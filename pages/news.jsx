@@ -96,13 +96,15 @@ NewsPosts
 
   return (
     <div className='home'>
-         <Head>
-  <title> A Comprehensive Breakdown of the Latest Innovations in technology </title>
-  
-  <meta property="og:url" content="https:/unboxdesk.com/news" />
-  <meta property="og:type" content="website" />
- 
-</Head>   
+
+<Head>
+        <title>Best News - Best Products & Services Buying Guides & Ratings</title>
+        <meta name="description" content={NewsPosts[0]?.content.replaceAll(/<\/?[^>]+(>|$)/gi, "")} />
+        <meta name="keywords" content="Unboxdesk,news, technology" />
+        <meta name="author" content="Peh Joseph" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="canonical" href="https://www.unboxdesk.com/news" />
+      </Head>  
   <div>
   
     <Appbar/>

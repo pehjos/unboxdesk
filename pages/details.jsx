@@ -22,14 +22,15 @@ console.log(data,"booooom")
 
   return (
     <div className='details'>
-  <Head>
-  <title>{data.category}</title>
 
-  
-
-  <meta property="og:type" content="website" />
- 
-</Head>
+<Head>
+        <title>{data.category}</title>
+        <meta name="description" content={data.content.replaceAll(/<\/?[^>]+(>|$)/gi, "")} />
+        <meta name="keywords" content="Unboxdesk,Iphone, computers" />
+        <meta name="author" content="Peh Joseph" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="canonical" href="https://www.unboxdesk.com/" />
+      </Head>
    <Appbar/>   
    <ListRoute/>
       <div className='details_content'>

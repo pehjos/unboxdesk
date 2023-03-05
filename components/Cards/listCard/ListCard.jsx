@@ -13,31 +13,7 @@ const router = useRouter();
 
 
   return (
-    <>
-    <NextSeo
-            title={content.replaceAll(/<\/?[^>]+(>|$)/gi, "")}
-            description={content.replaceAll(/<\/?[^>]+(>|$)/gi, "")}
-        
-            openGraph={{
-                type: 'article',
-                article: {
-          
-                    authors: [
-                        'unbodesk',
-                        'Pehjos',
-                    ],
-                    tags: ['review', 'gadget', 'technology'],
-                },
-              
-                images: {
-                    url: img,
-                    width: 850,
-                    height: 650,
-                    alt: img,
-                },
-                site_name: 'unboxdesk'
-            }}
-        />
+
     <div className='listCard' onClick={() => openPost(post._id)} >
             <div className='listCard_image'>
         <Image width={900} height={900} src={img} blurDataURL={img} placeholder="blur" alt="buy cheap"/>
@@ -48,7 +24,7 @@ const router = useRouter();
         
         </div>
     </div>
-    </>
+
   )
 }
 

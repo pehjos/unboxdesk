@@ -95,12 +95,15 @@ NewsPosts
 
   return (
     <div className='home'>
-   <Head>
-  
-  <meta property="og:url" content="https:/unboxdesk.com/audio" />
-  <meta property="og:type" content="website" />
  
-</Head> 
+ <Head>
+        <title>Best Audio Device Review - Best Products & Services Buying Guides & Ratings</title>
+        <meta name="description" content={NewsPosts[0]?.content.replaceAll(/<\/?[^>]+(>|$)/gi, "")} />
+        <meta name="keywords" content="Audio,devices, apple-homepod" />
+        <meta name="author" content="Peh Joseph" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="canonical" href="https://www.unboxdesk.com/audio" />
+      </Head> 
   <div>
       
     <Appbar/>

@@ -90,36 +90,23 @@ setNewsPosts(responseData);
 
   fetchVideo();
 }, []);
-NewsPosts
+// title={content.replaceAll(/<\/?[^>]+(>|$)/gi, "")}
+// description={content.replaceAll(/<\/?[^>]+(>|$)/gi, "")}
 
+NewsPosts
+console.log(NewsPosts[0]?.content,"posts")
   return (
     <>
+        <Head>
+        <title>Best Accessories Review - Best Products & Services Buying Guides & Ratings</title>
+        <meta name="description" content={NewsPosts[0]?.content.replaceAll(/<\/?[^>]+(>|$)/gi, "")} />
+        <meta name="keywords" content="Unboxdesk,Iphone, computers" />
+        <meta name="author" content="Peh Joseph" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="canonical" href="https://www.unboxdesk.com/acessories" />
+      </Head>
     <div className='home'>
-    <NextSeo
-            title="buy auto parts review"
-            description="best accessories cheap to buy for iphone"
-            canonical="www.unboxdesk.com/acessories"
-            openGraph={{
-                type: 'article',
-                article: {
-                    publishedTime: '2022-06-21T23:04:13Z',
-                    modifiedTime: '2022-01-21T18:04:43Z',
-                    authors: [
-                        'Peh Atta Joseph',
-                        'Pehjos',
-                    ],
-                    tags: ['car', 'iphone', 'sumsung','tv', 'technology', 'tiktok'],
-                },
-                url: 'www.unboxdesk.com/acessories',
-                images: {
-                    url: 'https://www.bhphotovideo.com/cdn-cgi/image/format=auto,fit=scale-down,width=500,quality=95/https://www.bhphotovideo.com/images/images500x500/smallrig_3327_moft_x_snap_on_stand_1619786847_1636566.jpg',
-                    width: 850,
-                    height: 650,
-                    alt: 'iphone cover',
-                },
-                site_name: 'unboxdesk'
-            }}
-        />
+
   <div>
       
     <Appbar/>

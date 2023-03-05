@@ -6,28 +6,13 @@ export default function HomeLayout() {
   return (
     <div >
   
-     <NextSeo
-                title="Best Gadget Review - Best Products & Services Buying Guides & Ratings"
-                description="Gadget Review is a resource for the best electronics, appliances and services for your home. Our reviews are based on research and hand's-on testing."
-                openGraph={{
-                    type: 'website',
-                    locale: 'en_US',
-                    url: 'https://www.unboxdesk.com/',
-                    siteName: 'unboxdesk',
-                }}
-                twitter={{
-                    handle: '@pehjos',
-                    site: '@unboxdesk.com',
-                    cardType: 'summary_large_image',
-                }}
-            />
-      <Head>
-            
-      <link rel="shortcut icon" href="../assets/ub.jpg" />
-        <title>Best Gadget Review - Best Products & Services Buying Guides & Ratings</title>
-     
+  <Head>
+        <title>Best Review - Best Products & Services Buying Guides & Ratings</title>
         <meta name="description" content="Gadget Review is a resource for the best electronics, appliances and services for your home. Our reviews are based on research and hand's-on testing." />
-   
+        <meta name="keywords" content="Unboxdesk,Iphone, computers" />
+        <meta name="author" content="Peh Joseph" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="canonical" href="https://www.unboxdesk.com/" />
       </Head>
       <div className="App">
   <Home/>

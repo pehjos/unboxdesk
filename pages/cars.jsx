@@ -94,12 +94,15 @@ NewsPosts
 
   return (
     <div className='home'>
-   <Head>
-  
-  <meta property="og:url" content="https:/unboxdesk.com/cars" />
-  <meta property="og:type" content="website" />
- 
-</Head> 
+
+<Head>
+        <title>Best Cars Review - Best Products & Services Buying Guides & Ratings</title>
+        <meta name="description" content={NewsPosts[0]?.content.replaceAll(/<\/?[^>]+(>|$)/gi, "")} />
+        <meta name="keywords" content="Benz,toyota, tesla" />
+        <meta name="author" content="Peh Joseph" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="canonical" href="https://www.unboxdesk.com/cars" />
+      </Head>
   <div>
       
     <Appbar/>

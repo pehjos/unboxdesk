@@ -13,30 +13,7 @@ const openPost = (id) => {
 };
   return (
     <>
-    <NextSeo
-            title={content.replaceAll(/<\/?[^>]+(>|$)/gi, "")}
-            description={content.replaceAll(/<\/?[^>]+(>|$)/gi, "")}
-        
-            openGraph={{
-                type: 'article',
-                article: {
-          
-                    authors: [
-                        'unbodesk',
-                        'Pehjos',
-                    ],
-                    tags: ['review', 'gadget', 'technology'],
-                },
-              
-                images: {
-                    url: img,
-                    width: 850,
-                    height: 650,
-                    alt: img,
-                },
-                site_name: 'unboxdesk'
-            }}
-        />
+
     <div className='product_card' >
         
         <div className='product_card_cont' onClick={() => openPost(post._id)}>

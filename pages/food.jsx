@@ -95,12 +95,15 @@ NewsPosts
 
   return (
     <div className='home'>
-         <Head>
-  
-  <meta property="og:url" content="https:/unboxdesk.com/food" />
-  <meta property="og:type" content="website" />
- 
-</Head>   
+
+<Head>
+        <title>Best food gadgets Review - Best Products & Services Buying Guides & Ratings</title>
+        <meta name="description" content={NewsPosts[0]?.content.replaceAll(/<\/?[^>]+(>|$)/gi, "")} />
+        <meta name="keywords" content="blender,air fryer, oven" />
+        <meta name="author" content="Peh Joseph" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="canonical" href="https://www.unboxdesk.com/food" />
+      </Head>   
   <div>
       
     <Appbar/>
