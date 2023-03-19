@@ -90,15 +90,25 @@ setNewsPosts(responseData);
 
   fetchVideo();
 }, []);
+NewsPosts
 // title={content.replaceAll(/<\/?[^>]+(>|$)/gi, "")}
 // description={content.replaceAll(/<\/?[^>]+(>|$)/gi, "")}
+let h1Text
+  // extract the first h1 tag from the content, if it exists
+  const firstPost = NewsPosts[0];
+  if (firstPost && firstPost.content) {
+    const content = firstPost.content;
+    const h1 = new DOMParser().parseFromString(content, 'text/html')
+                 .querySelector('h1');
+     h1Text = h1 ? h1.textContent : null;
+    console.log(h1Text);
+  }
 
-NewsPosts
-console.log(NewsPosts[0]?.content,"posts")
+
   return (
     <>
         <Head>
-        <title>Best Accessories Review - Best Products & Services Buying Guides & Ratings</title>
+        <title>{h1Text}</title>
         <meta name="description" content={NewsPosts[0]?.content.replaceAll(/<\/?[^>]+(>|$)/gi, "")} />
         <meta name="keywords" content="Unboxdesk,Iphone, computers" />
         <meta name="author" content="Peh Joseph" />

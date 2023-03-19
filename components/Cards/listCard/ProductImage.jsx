@@ -20,7 +20,7 @@ const openPost = (id) => {
           <div className='img_sec'>
         <Image width={100} height={100} src={img} blurDataURL={img} placeholder="blur" alt="best reviews"/>
 
-        <div className='text' dangerouslySetInnerHTML={{ __html: content}} />
+        <h1 className='text' dangerouslySetInnerHTML={{ __html: content}} />
         </div>
         
         </div>

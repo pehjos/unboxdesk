@@ -97,10 +97,23 @@ setNewsPosts(responseData);
 }, [handlePost]);
 NewsPosts
 
-  return (
-    <div className='home'>
+let h1Text
+const firstPost = NewsPosts[0];
+if (firstPost && firstPost.content) {
+  const content = firstPost.content;
+  const h1 = new DOMParser().parseFromString(content, 'text/html')
+               .querySelector('h1');
+   h1Text = h1 ? h1.textContent : null;
+  console.log(h1Text);
+}
 
-<Head>
+
+
+return (
+  <div className='home'>
+  
+  <Head>
+      <title>{h1Text}</title>
         <title>Product Videos</title>
         <meta name="description" content={NewsPosts[0]?.content.replaceAll(/<\/?[^>]+(>|$)/gi, "")} />
         <meta name="keywords" content="Unboxdesk,Iphone, computers" />

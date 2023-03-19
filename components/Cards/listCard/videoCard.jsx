@@ -20,7 +20,7 @@ const openPost = (id) => {
         
         </div>
         <div className='video_content' onClick={() => openPost(post._id)}>
-        <div className='cont' dangerouslySetInnerHTML={{ __html: content}} />
+        <h1 className='cont' dangerouslySetInnerHTML={{ __html: content}} />
         
         </div>
     </div>

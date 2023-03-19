@@ -18,14 +18,24 @@ function Details() {
   if (error) return <div>Failed to load</div>
   if (!data) return <div>Loading...</div>
 console.log(data,"booooom")
+let h1Text
+const firstPost = data;
+if (firstPost && firstPost.content) {
+  const content = firstPost.content;
+  const h1 = new DOMParser().parseFromString(content, 'text/html')
+               .querySelector('h1');
+   h1Text = h1 ? h1.textContent : null;
+  console.log(h1Text);
+}
+
 
 
   return (
     <div className='details'>
 
 <Head>
-        <title>{data.category}</title>
-        <meta name="description" content={data.content.replaceAll(/<\/?[^>]+(>|$)/gi, "")} />
+        <title>{h1Text}</title>
+        <meta name="description" content={data?.content ? data.content.replaceAll(/<\/?[^>]+(>|$)/gi, "") : ""} />
         <meta name="keywords" content="Unboxdesk,Iphone, computers" />
         <meta name="author" content="Peh Joseph" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />

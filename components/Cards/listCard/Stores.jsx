@@ -21,7 +21,7 @@ const router = useRouter();
         
         </div>
         <div className='listCard_content'>
-        <div dangerouslySetInnerHTML={{ __html: content}} />
+        <h1 dangerouslySetInnerHTML={{ __html: content}} />
         
         </div>
     </div>

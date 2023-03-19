@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Home from '../views/home/Home'
 
-import {NextSeo} from 'next-seo';
 export default function HomeLayout() {
   return (
     <div >
