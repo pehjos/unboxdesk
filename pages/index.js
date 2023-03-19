@@ -12,8 +12,7 @@ export default function HomeLayout() {
         <meta name="author" content="Peh Joseph" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="canonical" href="https://www.unboxdesk.com/" />
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1446397159695121"
-     crossorigin="anonymous"></script>
+        
       </Head>
       <div className="App">
   <Home/>

@@ -12,6 +12,7 @@ import Store from '../../components/Cards/listCard/Stores'
 import Footer from '../../components/Cards/listCard/Footer'
 import { useEffect, useState } from "react";
 import { useRecoilState } from "recoil";
+import AdBanner from '../../components/Cards/listCard/AdsBanner'
 import { handlePostState, useSSRPostsState } from "../../atoms/postAtom";
 const  HeadlineCard = dynamic(() => import('../../components/head/headCard'), { ssr: false })
 import dynamic from 'next/dynamic';
@@ -148,14 +149,7 @@ NewsPosts
 
   return (
     <div className='home'>
-      <Head>Best Reviews
-        
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1446397159695121"
-     crossorigin="anonymous"></script> 
-     <script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-        </Head>  
+      <Head>Best Reviews</Head>  
   
       
     <Appbar/>
@@ -215,15 +209,11 @@ btn="Buy"
 
 
 </div>
-
-
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1446397159695121"
-     data-ad-slot="6631234174"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-
+<AdBanner
+           data-ad-slot="6631234174"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        />
 </div>
 <div className='home_list'>
    <p>VIDEO </p>

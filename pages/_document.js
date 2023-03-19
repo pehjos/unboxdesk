@@ -27,7 +27,8 @@ class MyDocument extends Document {
           gtag('config', 'G-XGZ66XTVNQ');
         `}
       </Script> 
-        
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1446397159695121"
+     crossOrigin="anonymous" strategy="lazyOnload"></script>  
         </Head>
         <body>
           <Main />
