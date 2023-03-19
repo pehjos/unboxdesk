@@ -148,7 +148,14 @@ NewsPosts
 
   return (
     <div className='home'>
-      <Head>Best Reviews</Head>  
+      <Head>Best Reviews
+        
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1446397159695121"
+     crossorigin="anonymous"></script> 
+     <script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        </Head>  
   
       
     <Appbar/>
@@ -208,6 +215,14 @@ btn="Buy"
 
 
 </div>
+
+
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1446397159695121"
+     data-ad-slot="6631234174"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
 
 </div>
 <div className='home_list'>
