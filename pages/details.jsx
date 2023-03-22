@@ -59,9 +59,9 @@ if (firstPost && firstPost.content) {
        {/* <a href={data?.store_link}> */}
 <div className='content_details'>
         <div dangerouslySetInnerHTML={{ __html: data?.content}} /> 
-         <a href={data?.store_link}>
+         {/* <a href={data?.store_link}>
       <button className='downloadBtn'>Buy Now</button>
-      </a>
+      </a> */}
         </div>
       
 {/* <div className='source'>
