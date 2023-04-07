@@ -19,36 +19,47 @@ import '../styles/videocard.css'
 
 import { ChakraProvider } from '@chakra-ui/react'
 import { RecoilRoot } from "recoil";
-function MyApp({ Component, pageProps }) {
 
+function MyApp({ Component, pageProps }) {
   return(
     <>
-     <DefaultSeo
-                title="Best Gadget Review - Best Products & Services Buying Guides & Ratings"
-                description="Gadget Review is a resource for the best electronics, appliances and services for your home. Our reviews are based on research and hand's-on testing."
-                openGraph={{
-                    type: 'website',
-                    locale: 'en_US',
-                    url: 'https://www.unboxdesk.com/',
-                    siteName: 'unboxdesk',
-                }}
-                twitter={{
-                    handle: '@pehjos',
-                    site: '@unboxdesk.com',
-                    cardType: 'summary_large_image',
-                }}
-            />
+      <Head>
+        <title>Unboxdesk - Your Ultimate Guide to the Best Gadgets and Electronics</title>
+      </Head>
+      
+      <DefaultSeo
+        title="Unboxdesk - Your Ultimate Guide to the Best Gadgets and Electronics"
+        description="Unboxdesk is your go-to resource for the latest and greatest gadgets, electronics, and appliances for your home. Discover expert reviews, buying guides, and top-rated products to take your home to the next level."
+        canonical="https://www.unboxdesk.com/"
+        openGraph={{
+          type: 'website',
+          locale: 'en_US',
+          url: 'https://www.unboxdesk.com/',
+          site_name: 'Unboxdesk',
+          images: [
+            {
+              url: 'https://www.unboxdesk.com/images/og-image.jpg',
+              width: 1200,
+              height: 630,
+              alt: 'Unboxdesk - Your Ultimate Guide to the Best Gadgets and Electronics',
+            },
+          ],
+        }}
+        twitter={{
+          handle: '@unboxdesk',
+          site: '@unboxdesk',
+          cardType: 'summary_large_image',
+        }}
+      />
          
-    <ThemeProvider>
-    <RecoilRoot>
-    <ChakraProvider>
- 
-   <Component {...pageProps} />
-  
-   </ChakraProvider>
-   </RecoilRoot>
-   </ThemeProvider>
-   </>
+      <ThemeProvider>
+        <RecoilRoot>
+          <ChakraProvider>
+            <Component {...pageProps} />
+          </ChakraProvider>
+        </RecoilRoot>
+      </ThemeProvider>
+    </>
   )
 }
 

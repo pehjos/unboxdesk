@@ -111,11 +111,13 @@ return (
   
   <Head>
       <title>{h1Text}</title>
-        <meta name="description" content={NewsPosts[0]?.content.replaceAll(/<\/?[^>]+(>|$)/gi, "")} />
-        <meta name="keywords" content="airpod,homepod, ecodot" />
-        <meta name="author" content="Peh Joseph" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="canonical" href="https://www.unboxdesk.com/headset" />
+
+        <meta name="keywords" content="AirPods,HomePod,Echo Dot,headsets" />
+<meta name="description" content="Discover the latest and greatest audio devices with UnboxDesk. From AirPods to HomePods to Echo Dots, we have everything you need to enhance your audio experience." />
+<meta name="author" content="Peh Joseph" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="canonical" href="https://www.unboxdesk.com/headsets" />
+
       </Head>
   <div>
       

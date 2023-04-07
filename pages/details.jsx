@@ -35,11 +35,15 @@ if (firstPost && firstPost.content) {
 
 <Head>
         <title>{h1Text}</title>
-        <meta name="description" content={data?.content ? data.content.replaceAll(/<\/?[^>]+(>|$)/gi, "") : ""} />
-        <meta name="keywords" content="Unboxdesk,Iphone, computers" />
-        <meta name="author" content="Peh Joseph" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="canonical" href="https://www.unboxdesk.com/" />
+  
+
+  <meta name="description" content="Unboxdesk is your one-stop shop for all electronics, including laptops, smartphones, cameras, and more. Shop our wide selection of products from top brands like Apple, Samsung, and Canon." />
+  <meta name="keywords" content="Unboxdesk, electronics, laptops, smartphones, cameras, Apple, Samsung, Canon" />
+  <meta name="author" content="Peh Joseph" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="canonical" href="https://www.unboxdesk.com/" />
+
+
       </Head>
    <Appbar/>   
    <ListRoute/>

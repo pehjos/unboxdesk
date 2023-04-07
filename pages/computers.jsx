@@ -111,9 +111,10 @@ return (
       <title>{h1Text}</title>
         <meta name="description" content={NewsPosts[0]?.content.replaceAll(/<\/?[^>]+(>|$)/gi, "")} />
         <meta name="keywords" content="hp,dell, acer" />
-        <meta name="author" content="Peh Joseph" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="canonical" href="https://www.unboxdesk.com/computers" />
+<meta name="author" content="Peh Joseph" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="canonical" href="https://www.unboxdesk.com/computers" />
+
       </Head>
   <div>
       

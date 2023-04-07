@@ -106,79 +106,54 @@ let h1Text
 
 
   return (
-    <div className='home'>
-    
+    <>
     <Head>
-        <title>{h1Text}</title>
-        <meta name="description" content={NewsPosts[0]?.content.replaceAll(/<\/?[^>]+(>|$)/gi, "")} />
-        <meta name="keywords" content="SUMSUNG,LG Airconditioners, computers" />
-        <meta name="author" content="Peh Joseph" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="canonical" href="https://www.unboxdesk.com/appliances" />
-      </Head>
-  <div>
-      
-    <Appbar/>
-    <Search/>
-    <div className='headflex'>
-{/* head section breadcrum */}
-  </div>
-   
-    <ListRoute/>
-    <div className='home_center' >
-     <div className='first_list'>
-   <div className='home_list' >
-      <p>TOP STORIES </p>
-  { topPosts?.map((post) => <ListCard
- content={post.content} img={post.image} key={post._id} 
- post={post} />)
-
-    }
-
-</div>
-</div>
-
-  <div className='middle'>
-<div className='home_list'>
-   <p>HOME APPLIANCES</p>
-   <div className='videodisp'>
-
-   { NewsPosts?.map((post) => <ProductCard
- content={post.content} img={post.image} key={post._id} 
- post={post}
- price={post.price}
-btn="Buy"
-/>)
-}
-
-</div>
-</div>
-
-</div>
-
-
-<div className='right'>
-<div className='home_list'>
-<p>POPULAR STORES </p>
-
-{
-StorePosts?.map((post) => <Store
- content={post.content} img={post.image} key={post._id} 
-
-
- post={post} />)
-
-    }
-
-
-
-</div>
-</div>
-
-</div> 
-</div> 
-<Footer/>       
-</div>
+      <title>{h1Text} - Unboxdesk</title>
+      <meta name="description" content={NewsPosts[0]?.content.replaceAll(/<\/?[^>]+(>|$)/gi, "")} />
+      <meta name="keywords" content="Samsung, LG, air conditioners, home appliances, computers" />
+      <meta name="author" content="Peh Joseph" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="canonical" href="https://www.unboxdesk.com/appliances" />
+    </Head>
+    <div className="home">
+      <Appbar />
+      <Search />
+      <div className="headflex">
+        {/* head section breadcrumb */}
+      </div>
+      <ListRoute />
+      <div className="home_center">
+        <div className="first_list">
+          <div className="home_list">
+            <h2>TOP STORIES</h2>
+            {topPosts?.map((post) => (
+              <ListCard content={post.content} img={post.image} key={post._id} post={post} />
+            ))}
+          </div>
+        </div>
+        <div className="middle">
+          <div className="home_list">
+            <h2>HOME APPLIANCES</h2>
+            <div className="videodisp">
+              {NewsPosts?.map((post) => (
+                <ProductCard content={post.content} img={post.image} key={post._id} post={post} price={post.price} btn="Buy" />
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className="right">
+          <div className="home_list">
+            <h2>POPULAR STORES</h2>
+            {StorePosts?.map((post) => (
+              <Store content={post.content} img={post.image} key={post._id} post={post} />
+            ))}
+          </div>
+        </div>
+      </div>
+      <Footer />
+    </div>
+  </>
+  
   )
 }
 

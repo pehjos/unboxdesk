@@ -113,14 +113,21 @@ return (
   <div className='home'>
   
   <Head>
-      <title>{h1Text}</title>
-        <title>Product Videos</title>
-        <meta name="description" content={NewsPosts[0]?.content.replaceAll(/<\/?[^>]+(>|$)/gi, "")} />
-        <meta name="keywords" content="Unboxdesk,Iphone, computers" />
-        <meta name="author" content="Peh Joseph" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="canonical" href="https://www.unboxdesk.com/video" />
-      </Head>  
+  <title>{h1Text}</title>
+  <meta name="description" content={NewsPosts[0]?.content.replaceAll(/<\/?[^>]+(>|$)/gi, "")} />
+  <meta name="keywords" content="Unboxdesk, product videos, iPhone, computers" />
+  <meta name="author" content="Peh Joseph" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="canonical" href="https://www.unboxdesk.com/video" />
+  
+  {/* Open Graph tags for social media sharing */}
+  <meta property="og:title" content={h1Text} />
+  <meta property="og:description" content={NewsPosts[0]?.content.replaceAll(/<\/?[^>]+(>|$)/gi, "")} />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.unboxdesk.com/video" />
+  <meta property="og:image" content="https://www.unboxdesk.com/images/og-image-video.jpg" />
+</Head>
+ 
   <div>
       
     <Appbar/>

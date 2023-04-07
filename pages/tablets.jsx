@@ -108,13 +108,14 @@ return (
   <div className='home'>
   
   <Head>
-      <title>{h1Text}</title>
+      <title>{h1Text} - unboxdesk</title>
         <meta name="description" content={NewsPosts[0]?.content.replaceAll(/<\/?[^>]+(>|$)/gi, "")} />
-        <meta name="keywords" content="Unboxdesk,Iphone, computers" />
-        <meta name="author" content="Peh Joseph" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="canonical" href="https://www.unboxdesk.com/tablets" />
-      </Head> 
+        <meta name="keywords" content="Unboxdesk, tablets, iPad, Android tablets" />
+  <meta name="author" content="Peh Joseph" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="canonical" href="https://www.unboxdesk.com/tablets" />
+  </Head>
+
   <div>
       
     <Appbar/>

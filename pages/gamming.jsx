@@ -110,11 +110,13 @@ return (
   
   <Head>
       <title>{h1Text}</title>
-        <meta name="description" content={NewsPosts[0]?.content.replaceAll(/<\/?[^>]+(>|$)/gi, "")} />
-        <meta name="keywords" content="PS5,controllers, playstation" />
-        <meta name="author" content="Peh Joseph" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="canonical" href="https://www.unboxdesk.com/gamming" />
+  
+        <meta name="keywords" content="PS5, playstation, gaming, controllers, console games" />
+<meta name="description" content="Explore the latest games and accessories for PS5 at Unboxdesk. Shop for PS5 controllers, console games, and more."/>
+<meta name="author" content="Peh Joseph" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="canonical" href="https://www.unboxdesk.com/gaming" />
+
       </Head>
   <div>
       

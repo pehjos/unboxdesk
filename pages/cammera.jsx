@@ -110,10 +110,9 @@ return (
   <Head>
       <title>{h1Text}</title>
         <meta name="description" content={NewsPosts[0]?.content.replaceAll(/<\/?[^>]+(>|$)/gi, "")} />
-        <meta name="keywords" content="sonny,Iphone, computers" />
-        <meta name="author" content="Peh Joseph" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="canonical" href="https://www.unboxdesk.com/cammera" />
+        <meta name='author' content='Peh Joseph' />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+        <link rel='canonical' href='https://www.unboxdesk.com/cammera' />
       </Head> 
   <div>
       
@@ -127,7 +126,7 @@ return (
     <div className='home_center' >
      <div className='first_list'>
    <div className='home_list' >
-      <p>TOP STORIES </p>
+      <h2>TOP STORIES </h2>
   { topPosts?.map((post) => <ListCard
  content={post.content} img={post.image} key={post._id} 
  post={post} />)

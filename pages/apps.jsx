@@ -107,77 +107,70 @@ NewsPosts
 
   return (
     <div className='home'>
-    
     <Head>
-        <title>{h1Text}</title>
-        <meta name="description" content={NewsPosts[0]?.content.replaceAll(/<\/?[^>]+(>|$)/gi, "")} />
-        <meta name="keywords" content="SEO tools,social media,education" />
-        <meta name="author" content="Peh Joseph" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="canonical" href="https://www.unboxdesk.com/apps" />
-      </Head>
-  <div>
-      
-    <Appbar/>
-    <Search/>
-    <div className='headflex'>
-{/* head section breadcrum */}
+      <title>{h1Text}</title>
+      <meta name="description" content="Find the latest top stories, softwares, and popular stores on UnboxDesk - your go-to source for technology news and reviews." />
+      <meta name="keywords" content="UnboxDesk, technology news, software, popular stores" />
+      <meta name="author" content="Peh Joseph" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="canonical" href="https://www.unboxdesk.com/apps" />
+    </Head>
+    <div>
+      <Appbar/>
+      <Search/>
+      <div className='headflex'>
+        {/* head section breadcrum */}
+      </div>
+      <ListRoute/>
+      <div className='home_center' >
+        <div className='first_list'>
+          <div className='home_list' >
+            <h2>Top Stories</h2>
+            {topPosts?.map((post) => (
+              <ListCard
+                content={post.content}
+                img={post.image}
+                key={post._id}
+                post={post}
+              />
+            ))}
+          </div>
+        </div>
+        <div className='middle'>
+          <div className='home_list'>
+            <h2>Softwares</h2>
+            <div className='videodisp'>
+              {NewsPosts?.map((post) => (
+                <ProductCard
+                  content={post.content}
+                  img={post.image}
+                  key={post._id}
+                  post={post}
+                  price={post.price}
+                  btn="Buy"
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className='right'>
+          <div className='home_list'>
+            <h2>Popular Stores</h2>
+            {StorePosts?.map((post) => (
+              <Store
+                content={post.content}
+                img={post.image}
+                key={post._id}
+                post={post}
+              />
+            ))}
+          </div>
+        </div>
+      </div> 
+    </div> 
+    <Footer/>       
   </div>
-   
-    <ListRoute/>
-    <div className='home_center' >
-     <div className='first_list'>
-   <div className='home_list' >
-      <p>TOP STORIES </p>
-  { topPosts?.map((post) => <ListCard
- content={post.content} img={post.image} key={post._id} 
- post={post} />)
-
-    }
-
-</div>
-</div>
-
-  <div className='middle'>
-<div className='home_list'>
-   <p>SOFTWARES </p>
-   <div className='videodisp'>
-
-   { NewsPosts?.map((post) => <ProductCard
- content={post.content} img={post.image} key={post._id} 
- post={post}
- price={post.price}
-btn="Buy"
-/>)
-}
-
-</div>
-</div>
-
-</div>
-
-
-<div className='right'>
-<div className='home_list'>
-<p>POPULAR STORES </p>
-
-{
-StorePosts?.map((post) => <Store
- content={post.content} img={post.image} key={post._id} 
-
- post={post} />)
-
-    }
-
-
-
-</div>
-</div>
-
-</div> 
-</div> 
-<Footer/>       
-</div>
+  
   )
 }
 
