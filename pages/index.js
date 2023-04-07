@@ -13,7 +13,7 @@ export default function HomeLayout() {
         <meta name="keywords" content="tech, deals, products" />
         <meta name="author" content="Peh Joseph" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="canonical" href="https://www.example.com/sitemap.xml" />
+
       </Head>
       <div className="App">
         <Home />
